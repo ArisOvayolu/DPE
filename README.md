@@ -1,3 +1,6 @@
+
+# This repository is dedicated to a new site that I'll be developing, focused on educating the public on deceptive design techniques; specifically Dark Patterns. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
