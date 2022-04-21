@@ -23,18 +23,19 @@ const Navigate = useNavigate();
       sx={{
         margin: "auto",
         paddingLeft: "800px",
-        backgroundColor: "#8AC6D1",
+        backgroundColor: "#f0f8ff",
         padding: "10px",
       }}
     >
       <h1
         style={{
           marginLeft: "750px",
-          backgroundColor: "#b2e6fa",
+          backgroundColor: "#f0ffff",
           borderRadius: "15px",
           padding: "10px",
           maxWidth: "350px",
           paddingLeft: "20px",
+          fontFamily: 'Poppins',
         }}
       >
         Dark Patterns Exposed

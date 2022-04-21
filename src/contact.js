@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
+import Footer from "./components/Footer";
 
 
 const Contact = () => {
@@ -34,6 +35,7 @@ const Contact = () => {
           suspendisse in. Justo donec enim diam vulputate ut pharetra.
         </p>
       </Box>
+      <Footer/>
     </>
   );
 };

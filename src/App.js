@@ -4,6 +4,7 @@ import Landing from './Landing';
 import DPT from "./DPT";
 import Contact from "./contact";
 import EDP from "./EDP";
+import Facebook from "./Pages/Facebook";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/DarkPatternTechniques" element={<DPT/>}/>
       <Route path="/Contact" element={<Contact/>}/>
       <Route path="/ExposeTheDarkPatterns" element={<EDP/>}/>
+      <Route path="/ExposeTheDarkPatterns/Facebook" element={<Facebook/>}/>
     </Routes>
   </BrowserRouter>
   )
