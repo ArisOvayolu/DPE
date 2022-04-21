@@ -33,14 +33,14 @@ const Navigate = useNavigate();
           backgroundColor: "#f0ffff",
           borderRadius: "15px",
           padding: "10px",
-          maxWidth: "350px",
-          paddingLeft: "20px",
+          maxWidth: "300px",
+          paddingLeft: "75px",
           fontFamily: 'Poppins',
         }}
       >
         Dark Patterns Exposed
       </h1>
-      <Stack sx={{ marginLeft: "650px" }} spacing={2} direction="row">
+      <Stack sx={{ marginLeft: "475px" }} spacing={15} direction="row">
         <Button onClick={homeHandler}>home</Button>
         <Button variant="text" onClick={DPTHandler}>
           Dark Pattern Techniques

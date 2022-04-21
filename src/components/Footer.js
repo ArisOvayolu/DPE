@@ -16,11 +16,11 @@ const Footer = () => {
     >
       <h4
         style={{
-          marginLeft: "750px",
+          marginLeft: "815px",
           fontFamily: "Poppins",
         }}
       >
-        Created by: Aris
+        Created by: Aris M. Ovayolu
       </h4>
     </Box>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Footer from "./components/Footer";
 
 const DPT = () => {
