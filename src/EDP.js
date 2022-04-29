@@ -11,8 +11,8 @@ import Stack from "@mui/material/Stack";
 
 const avData = [
   { img: Facebook, route: "/ExposeTheDarkPatterns/Facebook", alt: "facebook" },
-  { img: Google, route: "/google", alt: "google" },
-  { img: Amazon, route: "/amazon", alt: "amazon" },
+  { img: Google, route: "/ExposeTheDarkPatterns/Google", alt: "google" },
+  { img: Amazon, route: "/ExposeTheDarkPatterns/amazon", alt: "amazon" },
 ];
 
 const EDP = () => {

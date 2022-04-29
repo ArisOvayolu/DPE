@@ -44,8 +44,8 @@ const Game = (props) => {
           alt="img1"
           style={{
             padding: "10px",
-            maxHeight: "80%",
-            maxWidth: "80%",
+            maxHeight: "125%",
+            maxWidth: "125%",
             justifySelf: "center",
           }}
         />

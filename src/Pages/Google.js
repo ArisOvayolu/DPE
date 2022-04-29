@@ -42,7 +42,7 @@ const Data = [
         <h1 style={{ paddingTop:"25px", marginLeft: "825px" }}>Google's Dark Patterns</h1>
         {score !== 3 ? (
           <>
-            <h4>here is score {score}</h4>
+            <h4>Score: {score}</h4>
             <Game data={Data[score]} scoreSetter={scoreSetter} />
           </>
         ) : (

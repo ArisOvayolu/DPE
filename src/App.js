@@ -6,6 +6,7 @@ import Contact from "./contact";
 import EDP from "./EDP";
 import Facebook from "./Pages/Facebook";
 import Google from "./Pages/Google";
+import Amazon from "./Pages/Amazon";
 import Footer from "./components/Footer";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/ExposeTheDarkPatterns" element={<EDP />} />
           <Route path="/ExposeTheDarkPatterns/Facebook" element={<Facebook />} />
           <Route path="/ExposeTheDarkPatterns/Google" element={<Google />} />
+          <Route path="/ExposeTheDarkPatterns/Amazon" element={<Amazon />} />
         </Routes>
       </BrowserRouter>
       {/* <Footer /> */}

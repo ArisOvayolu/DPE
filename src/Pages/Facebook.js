@@ -47,7 +47,7 @@ const Facebook = () => {
         </>
       ) : (
         <>
-        <h1>congrats you won</h1>
+        <h1>Completed!</h1>
         </>
       )}
     </>
