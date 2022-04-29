@@ -43,10 +43,10 @@ const Navigate = useNavigate();
       <Stack sx={{ marginLeft: "475px" }} spacing={15} direction="row">
         <Button onClick={homeHandler}>home</Button>
         <Button variant="text" onClick={DPTHandler}>
-          Dark Pattern Techniques
+        Dark Pattern Techniques
         </Button>
         <Button variant="text" onClick={EDPHandler}>
-            Expose The Dark Patterns
+        Expose The Dark Patterns
         </Button>
         <Button variant="text" onClick={contactHandler}>
         Contact

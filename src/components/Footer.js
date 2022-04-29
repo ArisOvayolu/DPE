@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        margin: "auto",
+        marginTop:'100px',
         backgroundColor: "#f0f8ff",
         padding: "10px",
-        position: "absolute",
+        position: "fixed",
         left: 0,
         bottom: 0,
         right: 0,
