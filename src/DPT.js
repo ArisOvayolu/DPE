@@ -2,44 +2,25 @@ import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
 import Footer from "./components/Footer";
+import YoutubeEmbed from "./components/YoutubeEmbed";
 
 const DPT = () => {
   return (
     <>
       <Header />
       <Box>
-          <h1 style={{ marginLeft: "775px" }}> Dark Pattern Techniques </h1>
-          <p
-            style={{
-              padding: "10px",
-              paddingLeft: "300px",
-              paddingRight: "300px",
-            }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus
-            ornare suspendisse sed nisi lacus sed viverra tellus. Dui faucibus
-            in ornare quam viverra orci sagittis eu. Maecenas ultricies mi eget
-            mauris pharetra et ultrices. Nisl pretium fusce id velit ut. Non
-            quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor.
-            Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Amet
-            massa vitae tortor condimentum. Justo nec ultrices dui sapien eget
-            mi proin sed libero. Quam adipiscing vitae proin sagittis nisl
-            rhoncus mattis rhoncus urna. Vitae auctor eu augue ut lectus arcu.
-            Vitae suscipit tellus mauris a diam. Nibh sit amet commodo nulla
-            facilisi nullam. Lorem ipsum dolor sit amet consectetur. Augue neque
-            gravida in fermentum et sollicitudin ac orci. At quis risus sed
-            vulputate odio ut enim blandit volutpat. nenatis lectus magna
-            fringilla urna. Maecenas volutpat blandit aliquam etiam. Sed id
-            semper risus in hendrerit gravida rutrum quisque. Augue eget arcu
-            dictum varius. Hendrerit gravida rutrum quisque non tellus orci ac
-            auctor. Nam libero justo laoreet sit amet. Id interdum velit laoreet
-            id donec ultrices. Sodales neque sodales ut etiam sit amet nisl
-            purus in. Cras pulvinar mattis nunc sed blandit libero volutpat sed.
-            Pretium fusce id velit ut tortor pretium viverra suspendisse
-            potenti. Quam vulputate dignissim suspendisse in. Justo donec enim
-            diam vulputate ut pharetra.
-          </p>
+          <h1 style={{ marginLeft: "750px" }}> Dark Pattern Techniques </h1>
+
+          <h2 style={{ paddingTop:"10px", marginLeft: "850px" }}> Hidden Cost </h2>
+          <YoutubeEmbed embedId="BVHMLs_N7SQ"/>
+
+          <h2 style={{  marginLeft: "815px" }}> Needless Complexity </h2>
+
+          <h2 style={{ paddingTop:"10px", marginLeft: "815px" }}> Misdirection </h2>
+
+          <h2 style={{ paddingTop:"10px", marginLeft: "815px" }}> Confirmshaming </h2>
+
+          <h2 style={{ paddingTop:"10px", marginLeft: "815px" }}> Privacy Zuckering </h2>
       </Box>
       <Footer/>
     </>
@@ -47,3 +28,4 @@ const DPT = () => {
 };
 
 export default DPT;
+

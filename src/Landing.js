@@ -24,12 +24,12 @@ const Landing = () => {
         If it’s not illegal, some may ask, what is the problem with this? Well, like many other aspects of the computing industry, the law isn’t always the most consistent indicator for what is right and wrong. Abusing the consumers trust by providing a service that undermines the value of honesty (which is what most Dark Pattern techniques ultimately do) is highly unethical and wrong. UX/UI designers should always prioritize the needs of the consumer and create interfaces that provide a smooth and efficient user experience. Raising awareness about these deceptive design tactics is very important, as people have the right to be aware of how they are unknowingly being exploited, for profit, by these corporations on a regular basis. 
         </p>
 
-        <h1 style={{ paddingTop:"25px", marginLeft: "750px" }}> How can I avoid Dark Patterns? </h1>
+        <h1 style={{ paddingTop:"25px", marginLeft: "715px" }}> How can I avoid Dark Patterns? </h1>
         <p style={{ padding:"10px", paddingLeft: "450px", paddingRight: "450px" }}>
         So, the question remains, how can we avoid being exploited by these unethical design techniques? Well, for me, the first step must be spreading awareness. By educating the average user on how industry is taking advantage of them, and how to take steps to avoid this, we are reducing the effectiveness of these deceptive design techniques. This website will be dedicated to doing exactly that; educating people about these techniques and how to avoid them. There are two dedicated pages to achieve this goal, the “Dark Pattern Techniques” page (where we essentially provide explanations on the different Dark Pattern techniques that you may come across and how to avoid them) and an interactive learning experience, “Expose the Dark Pattern” (where the user can select an application and then try and expose the different dark pattern techniques that they can find). Depending on user feedback, we are also considering future work on this website by adding a page dedicated to submissions, outing the implementation of such techniques, by you guys; essentially building a large thread of real examples.
         </p>
       </Box>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };
