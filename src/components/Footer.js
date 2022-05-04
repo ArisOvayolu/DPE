@@ -8,7 +8,7 @@ const Footer = () => {
         marginTop:'100px',
         backgroundColor: "#f0f8ff",
         padding: "10px",
-        position: "fixed",
+        position: "relative",
         left: 0,
         bottom: 0,
         right: 0,
@@ -16,7 +16,7 @@ const Footer = () => {
     >
       <h4
         style={{
-          marginLeft: "815px",
+          marginLeft: "830px",
           fontFamily: "Poppins",
         }}
       >
