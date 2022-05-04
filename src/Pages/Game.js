@@ -24,7 +24,6 @@ const Game = (props) => {
     event.preventDefault();
 
     if (value === data.correctOption) {
-      setHelperText("You got it!");
       setError(false);
       scoreSetter(1);
     } else if (value !== data.correctOption) {
@@ -78,7 +77,7 @@ const Game = (props) => {
                 />
               </RadioGroup>
               <FormHelperText>{helperText}</FormHelperText>
-              <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined">
+              <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="contained">
                 Check Answer
               </Button>
             </FormControl>
