@@ -24,7 +24,6 @@ const Game = (props) => {
     event.preventDefault();
 
     if (value === data.correctOption) {
-      setHelperText("You got it!");
       setError(false);
       scoreSetter(1);
     } else if (value !== data.correctOption) {
