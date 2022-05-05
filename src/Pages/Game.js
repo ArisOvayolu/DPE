@@ -9,6 +9,7 @@ import FormLabel from "@mui/material/FormLabel";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 
+
 const Game = (props) => {
   const { data, scoreSetter } = props;
   const [value, setValue] = React.useState("");
@@ -36,23 +37,23 @@ const Game = (props) => {
   };
 
   return (
-    <Grid spacing={2} container sx={{padding:'30px', margin:'20px'}}>
-      <Grid xs={12} item sx={{ justifyContent: "center", display: "flex" }}>
+    <Grid spacing={2} container sx={{marginRight:'25px'}}>
+      <Grid xs={6} item sx={{ justifyContent: "center", display: "flex" }}>
         <img
           src={data.img}
           alt="img1"
           style={{
             padding: "10px",
-            maxHeight: "125%",
-            maxWidth: "125%",
+            maxHeight: "100%",
+            maxWidth: "100%",
             justifySelf: "center",
           }}
         />
       </Grid>
-      <Grid xs={12} item sx={{ justifyContent: "center", display: "flex" }}>
-        <Paper elevation={3} >
+      <Grid xs={6} item sx={{ justifyContent:'space-around', display: "flex", justifyItems:'center' }}>
+        <Paper elevation={3} sx={{borderRadius:'50px', maxHeight:'350px', justifySelf:'center', margin:'auto', marginLeft:'100px'}} >
           <form onSubmit={handleSubmit}>
-            <FormControl sx={{ m: 3 }} error={error} variant="standard">
+            <FormControl sx={{ m: 3, borderRadius:'40px' }} error={error} variant="standard">
               <FormLabel id="demo-error-radios">Dark Patterns Quiz!</FormLabel>
               <RadioGroup
                 aria-labelledby="demo-error-radios"

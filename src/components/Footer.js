@@ -6,7 +6,7 @@ const Footer = () => {
     <Box
       sx={{
         marginTop:'100px',
-        backgroundColor: "#f0f8ff",
+        backgroundColor: "black",
         padding: "10px",
         position: "relative",
         left: 0,
@@ -18,6 +18,7 @@ const Footer = () => {
         style={{
           marginLeft: "830px",
           fontFamily: "Poppins",
+          color: 'white'
         }}
       >
         Created by: Aris M. Ovayolu
