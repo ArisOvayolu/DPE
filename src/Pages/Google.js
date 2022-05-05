@@ -4,6 +4,10 @@ import Game from "./Game";
 import DisguisedAds from "../img/Google/Disguised ads.jpg";
 import GglNeedlessComplexity from "../img/Google/Needless Complexity.jpg";
 import ContinousSpam from "../img/Google/Continous Spam.png";
+import Badge from "@mui/material/Badge";
+import SportsScoreIcon from "@mui/icons-material/SportsScore";
+import Grid from "@mui/material/Grid";
+
 
 const Data = [
     {
@@ -39,12 +43,38 @@ const Data = [
     return (
       <>
         <Header />
-        <h1 style={{ paddingTop:"25px", marginLeft: "825px" }}>Google's Dark Patterns</h1>
-        {score !== 3 ? (
-          <>
-            <h4>Score: {score}</h4>
-            <Game data={Data[score]} scoreSetter={scoreSetter} />
-          </>
+        <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>
+        Google's Dark Patterns
+      </h1>
+      {score !== 3 ? (
+        <>
+          <Grid container spacing={2}>
+            <Grid item xs={1}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  margin:'auto'
+                }}
+              >
+                <h3>Score</h3>
+                <Badge
+                  badgeContent={score}
+                  sx={{ height: "50px", width: "50px" }}
+                  color="primary"
+                >
+                  <SportsScoreIcon
+                    color="black"
+                    sx={{ height: "75px", width: "75px" }}
+                  />
+                </Badge>
+              </div>
+            </Grid>
+            <Grid item xs={11}>
+              <Game data={Data[score]} scoreSetter={scoreSetter} />
+            </Grid>
+          </Grid>
+        </>
         ) : (
           <>
           <h1>Completed!</h1>

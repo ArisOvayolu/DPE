@@ -23,32 +23,33 @@ const Navigate = useNavigate();
       sx={{
         margin: "auto",
         paddingLeft: "800px",
-        backgroundColor: "#f0f8ff",
+        backgroundColor: "black",
         padding: "10px",
       }}
     >
       <h1
         style={{
-          marginLeft: "750px",
-          backgroundColor: "#f0ffff",
+          marginLeft: "765px",
+          backgroundColor: "black",
           borderRadius: "15px",
           padding: "10px",
           maxWidth: "300px",
           paddingLeft: "75px",
           fontFamily: 'Poppins',
+          color: 'white'
         }}
       >
         Dark Patterns Exposed
       </h1>
-      <Stack sx={{ marginLeft: "475px" }} spacing={15} direction="row">
-        <Button onClick={homeHandler}>home</Button>
-        <Button variant="text" onClick={DPTHandler}>
+      <Stack sx={{ marginLeft: "475px", }} spacing={15} direction="row">
+        <Button sx={{color:'white'}} onClick={homeHandler}>home</Button>
+        <Button variant="text" sx={{color:'white'}} onClick={DPTHandler}>
         Dark Pattern Techniques
         </Button>
-        <Button variant="text" onClick={EDPHandler}>
+        <Button variant="text" sx={{color:'white'}} onClick={EDPHandler}>
         Expose The Dark Patterns
         </Button>
-        <Button variant="text" onClick={contactHandler}>
+        <Button variant="text" sx={{color:'white'}} onClick={contactHandler}>
         Contact
         </Button>
       </Stack>
