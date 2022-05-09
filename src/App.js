@@ -7,7 +7,10 @@ import EDP from "./EDP";
 import Facebook from "./Pages/Facebook";
 import Google from "./Pages/Google";
 import Amazon from "./Pages/Amazon";
+import About from "./About";
+import Alternative from "./AlternativeDesign";
 import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -21,9 +24,12 @@ function App() {
           <Route path="/ExposeTheDarkPatterns/Facebook" element={<Facebook />} />
           <Route path="/ExposeTheDarkPatterns/Google" element={<Google />} />
           <Route path="/ExposeTheDarkPatterns/Amazon" element={<Amazon />} />
+          <Route path="/About" element = {<About/>} />
+          <Route path="/AlternativeDesign" element = {<Alternative/>} />
         </Routes>
       </BrowserRouter>
-      {/* <Footer /> */}
+      <Footer/>
+    
     </>
   );
 }

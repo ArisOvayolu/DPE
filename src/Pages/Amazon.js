@@ -7,6 +7,8 @@ import AMMisdirection from "../img/Amazon/Amazon Misdirection.png";
 import Badge from "@mui/material/Badge";
 import SportsScoreIcon from "@mui/icons-material/SportsScore";
 import Grid from "@mui/material/Grid";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import Footer from "../components/Footer";
 
 const Data = [
   {
@@ -32,6 +34,8 @@ const Data = [
   },
 ];
 
+const normalise = (value)=> ((value- 0)*100)/(3-0);
+
 const Amazon = () => {
   const [score, setScore] = useState(0);
 
@@ -42,7 +46,8 @@ const Amazon = () => {
   return (
     <>
       <Header />
-      <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>
+      <LinearProgress variant="determinate" value={normalise(score)} />
+      <h1 style={{ paddingTop: "25px", marginLeft: "825px", paddingBottom: "45px" }}>
         Amazons's Dark Patterns
       </h1>
       {score !== 3 ? (
@@ -76,9 +81,10 @@ const Amazon = () => {
         </>
       ) : (
         <>
-          <h1>Completed!</h1>
+          <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>Completed!</h1>
         </>
       )}
+      
     </>
   );
 };
