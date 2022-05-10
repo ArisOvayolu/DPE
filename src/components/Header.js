@@ -36,12 +36,10 @@ const Header = () => {
       >
         <h1
           style={{
-            marginLeft: "765px",
+            marginLeft: "850px",
             backgroundColor: "#253030",
             borderRadius: "15px",
-            padding: "10px",
             maxWidth: "300px",
-            paddingLeft: "75px",
             fontFamily: "Poppins",
             color: "white",
           }}

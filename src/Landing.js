@@ -7,27 +7,35 @@ import StatusBar from "./components/StatusBar";
 import Divider from '@mui/material/Divider'
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
 
 const Landing = () => {
+  const Navigate = useNavigate();
+  const DPTHandler = () => {
+    Navigate("/DarkPatternTechniques");
+  };
 
   return (
     <>
       <StatusBar></StatusBar>
       <Header />
-      <Box sx={{ margin: "40px" }}>
+      <Box sx={{margin:'40px', backgroundColor: "#E1E8E8" }}>
         <h1
           style={{
             paddingTop: "45px",
             paddingBottom: "25px",
             marginLeft: "700px",
-            fontFamily: "Abril Fatface",
-            fontSize: 43,
+            fontFamily: "Poppins",
+            fontSize: 38,
           }}
         >
           
           What are Dark Patterns?
         </h1>
-        <Divider />
+        <Divider light sx={{padding:'10px'}}/>
         <Grid
           container
           direction="row"
@@ -35,21 +43,30 @@ const Landing = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Grid container justifyContent="center" item xs={6}>
-            <img
-              src={info}
-              alt="img1"
-              style={{
-                height: "80%",
-                width: "75%",
-                justifySelf: "center",
-              }}
-            />
+          <Grid container justifyContent="center" item xs={5}>
+            <Card sx={{padding:'10px'}}>
+                <CardMedia
+                  component="img"
+                  height="425"
+                  width="575"
+                  image={info}
+                  alt="info"
+                />
+                <CardContent>
+                <Typography gutterBottom variant="h6" component="div" style={{marginLeft:'90px'}}>
+                  Visual Representation of Dark Patterns
+                </Typography>
+                <Divider light sx={{padding:'1px'}}/>
+                <Typography gutterBottom variant="body2" component="div" style={{marginLeft:'65px'}}>
+                  Ref: https://uxknowledgebase.com/dark-patterns-3b41ed7a690e
+                </Typography>
+              </CardContent>
+            </Card>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <p
               style={{
-                fontFamily: "Montserrat",
+                fontFamily: "Century",
                 fontSize: 20,
               }}
             >
@@ -62,25 +79,25 @@ const Landing = () => {
               techniques (to achieve various purposes) and as a practice are
               largely unknown by the average consumer.
             </p>
-            <Divider />
+            <Divider sx={{padding:'10px'}}/>
           </Grid>
         </Grid>
-        <h1
+        <h2
           style={{
             paddingTop: "25px",
             marginLeft: "825px",
-            fontFamily: "Abril Fatface",
+            fontFamily: "Poppins",
           }}
         >
           {" "}
           The Problem{" "}
-        </h1>
+        </h2>
         <p
           style={{
             padding: "10px",
             paddingLeft: "400px",
             paddingRight: "400px",
-            fontFamily: "Montserrat",
+            fontFamily: "Century",
             fontSize: 20,
           }}
         >
@@ -96,23 +113,23 @@ const Landing = () => {
           the right to be aware of how they are unknowingly being exploited, for
           profit, by these corporations on a regular basis.
         </p>
-        <Divider />
-        <h1
+        <Divider sx={{padding:'10px'}}/>
+        <h2
           style={{
             paddingTop: "25px",
             marginLeft: "715px",
-            fontFamily: "Abril Fatface",
+            fontFamily: "Poppins",
           }}
         >
           {" "}
           How can I avoid Dark Patterns?{" "}
-        </h1>
+        </h2>
         <p
           style={{
             padding: "10px",
             paddingLeft: "400px",
             paddingRight: "400px",
-            fontFamily: "Montserrat",
+            fontFamily: "Century",
             fontSize: 20,
           }}
         >
@@ -134,29 +151,37 @@ const Landing = () => {
           such techniques, by you guys; essentially building a large thread of
           real examples.
         </p>
-        <Divider />
-        <h1
+        <Divider sx={{padding:'10px'}}/>
+        <h2
           style={{
             paddingTop: "25px",
             marginLeft: "860px",
-            fontFamily: "Abril Fatface",
+            fontFamily: "Poppins",
           }}
         >
           {" "}
           Dive in{" "}
-        </h1>
+        </h2>
         <p
           style={{
             padding: "10px",
             paddingLeft: "570px",
             paddingRight: "400px",
-            fontFamily: "Montserrat",
+            paddingBottom: "20px",
+            fontFamily: "Century",
             fontSize: 20,
           }}
         >
           Piqued your interest? Let's have a more in depth look at the different
-          techniques:
-        </p> 
+          techniques
+        </p>
+        <Button
+            variant="text"
+            sx={{ backgroundColor:"#253030", color: "White", fontFamily: "Poppins", marginLeft: "795px" }}
+            onClick={DPTHandler}
+          >
+            Dark Pattern Techniques
+          </Button> 
       </Box>
       
     </>

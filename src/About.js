@@ -1,42 +1,175 @@
 import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
-import Footer from "./components/Footer";
 import StatusBar from "./components/StatusBar";
-import pp from "./img/About/pp.jpg";
 import { Divider } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import pp from "./img/About/pp.jpg";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Fab from "@mui/material/Fab";
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
-    return (
-      <>
-        <StatusBar></StatusBar>
-        <Header />
-        <Box sx={{margin:'40px'}}>
-          <h1 style={{ paddingTop:"10px", marginLeft: "875px", fontFamily: 'Abril Fatface', fontSize:45 }}> About </h1>
-          <p style={{ padding:"2px", paddingLeft: "500px", paddingRight: "450px", fontFamily: 'Montserrat', fontSize:20}}>
-          Hello, world! My name is Aris, and I am a third-year computer science student at Newcastle University. 
-          </p> 
-          <p style={{ padding:"2px", paddingLeft: "400px", paddingRight: "400px", fontFamily: 'Montserrat', fontSize:20}}>
-          I’ve always been interested in the psychology behind the designing of user experiences; why are certain applications/website so addicting to use? How do some of these applications/websites become so integral to the consumers day to day life? These questions led me to the topic of Human Computer Interaction (HCI), where I began learning the principles and techniques that UI/UE developers adopt to design these interfaces and experiences. Working from the perspective of the designer stressed the importance of the responsibility that these designers, and the companies that employ them, bear in operating in goodwill and not taking advantage of consumers. Such responsibility should never be taken lightly; the controversy surrounding some of the world’s most influential applications/websites (Facebook, for example) and their unethical practices with their user experiences, taints the fundamental trust between consumer and designer.   
-          </p> 
-          <Divider />
-          <h1 style={{ paddingTop:"25px", marginLeft: "755px", fontFamily: 'Abril Fatface' }}> What does this site offer? </h1>
-          <p style={{ padding:"10px", paddingLeft: "400px", paddingRight: "400px", fontFamily: 'Montserrat', fontSize:20 }}>
-          This site aims to be a platform that provides the public information on dark patterns. The home page offers an overview of what dark patterns are and the general discussions around them; users that are interested in looking at dark patterns in a more in depth manner can check out our "Dark Pattern Techniques" page. 
-          </p>
-          <Divider />
-          <h1 style={{ paddingTop:"25px", marginLeft: "755px", fontFamily: 'Abril Fatface' }}> How can I get involved? </h1>
-          <p style={{ padding:"2px", paddingLeft: "400px", paddingRight: "400px", fontFamily: 'Montserrat', fontSize:20 }}>
-          We are planning on adding new features to to the site in the near future to make it more accessible towards user input.   
-          </p>
-          <p style={{ padding:"1px", paddingLeft: "400px", paddingRight: "400px", fontFamily: 'Montserrat', fontSize:20 }}>
-          What does that mean? Well, one of the ways we were thinking of adding more user input is by adding a page that allows users to submit their own experiences with coming across dark patterns. For now though, do not hesitate to contact us by navigating to the contact page, your feedback is very much so appreciated!  
-          </p>
-          view contacts
-        </Box>
-      </>
-      
-    );
+  const Navigate = useNavigate();
+  const contactHandler = () => {
+    Navigate("/Contact");
   };
-  
-  export default About;
+
+  return (
+    <>
+      <StatusBar></StatusBar>
+      <Header />
+      <Box sx={{ margin: "50px", backgroundColor: "#E1E8E8" }}>
+        <h1
+          style={{
+            paddingTop: "10px",
+            marginLeft: "845px",
+            fontFamily: "Poppins",
+            fontSize: 40,
+          }}
+        >
+          {" "}
+          About{" "}
+        </h1>
+        <Grid container justifyContent="center" item xs={12}>
+          <Card sx={{ padding: "10px" }}>
+            <CardMedia
+              component="img"
+              height="300"
+              width="400"
+              image={pp}
+              alt="pp"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h6"
+                component="div"
+                style={{ marginLeft: "65px", paddingBottom: "10px" }}
+              >
+                Aris M. Ovayolu
+              </Typography>
+              <Fab
+                variant="extended"
+                onClick={() => {
+                  window.open(
+                    "https://uk.linkedin.com/in/aris-m-ovayolu-722647157?msclkid=365f8e52cfcd11ec928539b45ccd3297",
+                    "_blank"
+                  );
+                }}
+                sx={{ marign: "auto", marginLeft: "28%", color: "black", backgroundColor:"#E1E8E8" }}
+              >
+                Linkedin <LinkedInIcon sx={{ mr: 0, color: "black" }} />
+              </Fab>
+            </CardContent>
+          </Card>
+        </Grid>
+        <p
+          style={{
+            padding: "2px",
+            paddingTop: "20px",
+            paddingLeft: "435px",
+            paddingRight: "400px",
+            fontFamily: "Century",
+            fontSize: 21,
+          }}
+        >
+          Hello, world! My name is Aris, and I am a third-year computer science
+          student at Newcastle University. I’ve always been interested in the
+          psychology behind the designing of user experiences; why are certain
+          applications/website so addicting to use? How do some of these
+          applications/websites become so integral to the consumers day to day
+          life?
+        </p>
+        <p
+          style={{
+            padding: "2px",
+            paddingLeft: "435px",
+            paddingRight: "400px",
+            fontFamily: "Century",
+            fontSize: 21,
+          }}
+        >
+          These questions led me to the topic of Human Computer Interaction
+          (HCI), where I began learning the principles and techniques that UI/UE
+          developers adopt to design these interfaces and experiences. Working
+          from the perspective of the designer stressed the importance of the
+          responsibility that these designers, and the companies that employ
+          them, bear in operating in goodwill and not taking advantage of
+          consumers. Such responsibility should never be taken lightly; the
+          controversy surrounding some of the world’s most influential
+          applications/websites (Facebook, for example) and their unethical
+          practices with their user experiences, taints the fundamental trust
+          between consumer and designer.
+        </p>
+        <p
+          style={{
+            padding: "2px",
+            paddingLeft: "435px",
+            paddingRight: "400px",
+            fontFamily: "Century",
+            fontSize: 21,
+          }}
+        >
+          I am strongly against tis approach to designing and created this
+          website to raise awareness of dark pattern implementation - the
+          ultimate aim of this website is to educate the average web user of
+          these deceptive design techniques.
+        </p>
+        <Divider sx={{ padding: "10px" }} />
+        <h1
+          style={{
+            paddingTop: "25px",
+            marginLeft: "730px",
+            fontFamily: "Poppins",
+          }}
+        >
+          {" "}
+          How can I get involved?{" "}
+        </h1>
+        <p
+          style={{
+            padding: "2px",
+            paddingLeft: "435px",
+            paddingRight: "400px",
+            fontFamily: "Century",
+            fontSize: 21,
+          }}
+        >
+          We are planning on adding new features to to the site in the near
+          future to make it more accessible towards user input.
+        </p>
+        <p
+          style={{
+            padding: "1px",
+            paddingLeft: "435px",
+            paddingRight: "400px",
+            paddingBottom: "20px",
+            fontFamily: "Century",
+            fontSize: 21,
+          }}
+        >
+          What does that mean? Well, one of the ways we were thinking of adding
+          more user input is by adding a page that allows users to submit their
+          own experiences with coming across dark patterns. For now though, do
+          not hesitate to contact us by navigating to the contact page, your
+          feedback is very much so appreciated!
+        </p>
+        <Button
+          variant="text"
+          sx={{ backgroundColor:"#253030", color: "White", fontFamily: "Poppins", marginLeft: "880px" }}
+          onClick={contactHandler}
+        >
+          Contact
+        </Button>
+      </Box>
+    </>
+  );
+};
+
+export default About;
