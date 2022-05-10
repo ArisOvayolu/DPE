@@ -28,7 +28,7 @@ const About = () => {
         <h1
           style={{
             paddingTop: "10px",
-            marginLeft: "845px",
+            marginLeft: "840px",
             fontFamily: "Poppins",
             fontSize: 40,
           }}
@@ -162,7 +162,7 @@ const About = () => {
         </p>
         <Button
           variant="text"
-          sx={{ backgroundColor:"#253030", color: "White", fontFamily: "Poppins", marginLeft: "880px" }}
+          sx={{ backgroundColor:"#253030", color: "White", fontFamily: "Poppins", marginLeft: "855px" }}
           onClick={contactHandler}
         >
           Contact

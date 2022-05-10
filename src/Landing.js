@@ -27,7 +27,7 @@ const Landing = () => {
           style={{
             paddingTop: "45px",
             paddingBottom: "25px",
-            marginLeft: "700px",
+            marginLeft: "690px",
             fontFamily: "Poppins",
             fontSize: 38,
           }}
@@ -53,8 +53,8 @@ const Landing = () => {
                   alt="info"
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h6" component="div" style={{marginLeft:'90px'}}>
-                  Visual Representation of Dark Patterns
+                <Typography gutterBottom variant="h6" component="div" style={{marginLeft:'45px'}}>
+                  Visual Representation of Dark Pattern Techniques
                 </Typography>
                 <Divider light sx={{padding:'1px'}}/>
                 <Typography gutterBottom variant="body2" component="div" style={{marginLeft:'65px'}}>
