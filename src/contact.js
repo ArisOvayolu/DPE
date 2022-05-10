@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
-import Footer from "./components/Footer";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import Fab from "@mui/material/Fab";
