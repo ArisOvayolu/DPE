@@ -27,7 +27,7 @@ const About = () => {
       <Box sx={{ margin: "50px", backgroundColor: "#E1E8E8" }}>
         <h1
           style={{
-            paddingTop: "10px",
+            paddingTop: "40px",
             marginLeft: "840px",
             fontFamily: "Poppins",
             fontSize: 40,
@@ -36,8 +36,9 @@ const About = () => {
           {" "}
           About{" "}
         </h1>
-        <Grid container justifyContent="center" item xs={12}>
-          <Card sx={{ padding: "10px" }}>
+        <Divider light sx={{ padding: "10px" }} />
+        <Grid container justifyContent="center" item xs={12} sx={{paddingTop:"40px"}}>
+          <Card sx={{ padding: "10px", paddingTop:"10px" }}>
             <CardMedia
               component="img"
               height="300"
@@ -69,17 +70,30 @@ const About = () => {
             </CardContent>
           </Card>
         </Grid>
-        <p
+        <h3
           style={{
-            padding: "2px",
-            paddingTop: "20px",
-            paddingLeft: "435px",
-            paddingRight: "400px",
-            fontFamily: "Century",
+            paddingTop: "50px",
+            paddingBottom: "10px",
+            marginLeft: "890px",
+            fontFamily: "Poppins",
             fontSize: 21,
           }}
         >
-          Hello, world! My name is Aris, and I am a third-year computer science
+          Me
+        </h3>
+        <p
+          style={{
+            padding: "2px",
+            paddingLeft: "435px",
+            paddingRight: "400px",
+            paddingBottom: "30px",
+            lineHeight: 1.5,
+            fontFamily: "Helvetica",
+            fontSize: 19,
+          }}
+        >
+          <span style={{color: "black", fontSize:25, fontFamily:"Poppins"}}>Hello, world! </span>
+          My name is Aris, and I am a third-year computer science
           student at Newcastle University. I’ve always been interested in the
           psychology behind the designing of user experiences; why are certain
           applications/website so addicting to use? How do some of these
@@ -91,8 +105,10 @@ const About = () => {
             padding: "2px",
             paddingLeft: "435px",
             paddingRight: "400px",
-            fontFamily: "Century",
-            fontSize: 21,
+            paddingBottom: "30px",
+            lineHeight: 1.5,
+            fontFamily: "Helvetica",
+            fontSize: 19,
           }}
         >
           These questions led me to the topic of Human Computer Interaction
@@ -112,8 +128,10 @@ const About = () => {
             padding: "2px",
             paddingLeft: "435px",
             paddingRight: "400px",
-            fontFamily: "Century",
-            fontSize: 21,
+            paddingBottom: "30px",
+            lineHeight: 1.5,
+            fontFamily: "Helvetica",
+            fontSize: 19,
           }}
         >
           I am strongly against tis approach to designing and created this
@@ -125,6 +143,7 @@ const About = () => {
         <h1
           style={{
             paddingTop: "25px",
+            paddingBottom: "30px",
             marginLeft: "730px",
             fontFamily: "Poppins",
           }}
@@ -137,8 +156,10 @@ const About = () => {
             padding: "2px",
             paddingLeft: "435px",
             paddingRight: "400px",
-            fontFamily: "Century",
-            fontSize: 21,
+            paddingBottom: "30px",
+            lineHeight: 1.5,
+            fontFamily: "Helvetica",
+            fontSize: 19,
           }}
         >
           We are planning on adding new features to to the site in the near
@@ -150,11 +171,12 @@ const About = () => {
             paddingLeft: "435px",
             paddingRight: "400px",
             paddingBottom: "20px",
-            fontFamily: "Century",
-            fontSize: 21,
+            lineHeight: 1.5,
+            fontFamily: "Helvetica",
+            fontSize: 19,
           }}
         >
-          What does that mean? Well, one of the ways we were thinking of adding
+          <span style={{color: "black", fontSize:19, fontFamily:"Poppins"}}>What does that mean?</span> Well, one of the ways we were thinking of adding
           more user input is by adding a page that allows users to submit their
           own experiences with coming across dark patterns. For now though, do
           not hesitate to contact us by navigating to the contact page, your
