@@ -1,37 +1,183 @@
 import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
-import Footer from "./components/Footer";
 import YoutubeEmbed from "./components/YoutubeEmbed";
+import StatusBar from "./components/StatusBar";
+import Avatar from "@mui/material/Avatar";
+import HC from "./img/DPT/HiddenCosts.jpg";
+import MD from "./img/DPT/Misdirection.jpg";
+import PZ from "./img/DPT/PrivacyZuckering.jpg";
+import NC from "./img/DPT/NeedlessComplexity.jpg";
+import DA from "./img/DPT/DisguisedAds.jpg";
+import SB from "./img/DPT/SneakintoBasket.jpg";
+import CS from "./img/DPT/ConfirmShaming.jpg";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import { useNavigate } from "react-router-dom";
 
 const DPT = () => {
+  const Navigate = useNavigate();
+  const EDPHandler = () => {
+    Navigate("/ExposeTheDarkPatterns");
+  };
   return (
     <>
+      <StatusBar></StatusBar>
       <Header />
-      <Box>
-          <h1 style={{ marginLeft: "750px" }}> Dark Pattern Techniques </h1>
-          
-          <h2 style={{ marginLeft: "450px" }}>Let's explore some of these Dark Patterns, together through a series of these videos</h2>
+      <Box sx={{ margin: "40px", backgroundColor: "#E1E8E8" }}>
+        <h1
+          style={{
+            padding: "20px",
+            paddingTop: "50px",
+            marginLeft: "700px",
+            fontFamily: "Poppins",
+          }}
+        >
+          {" "}
+          Dark Pattern Techniques{" "}
+        </h1>
+        <Divider light sx={{ padding: "10px" }} />
+        <Box
+          sx={{
+            paddingTop: "30px",
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <Avatar alt={"ava"} src={HC} sx={{ width: 50, height: 50 }} />
+          <h2
+            style={{
+              fontFamily: "Poppins",
+              marginLeft: "30px",
+            }}
+          >
+            {" "}
+            Hidden Cost{" "}
+          </h2>
+        </Box>
+        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <Divider light />
 
-          <h2 style={{ paddingTop:"10px", marginLeft: "865px" }}> Hidden Cost </h2>
-          <YoutubeEmbed embedId="BVHMLs_N7SQ"/>
+        <Box
+          sx={{
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <Avatar alt={"ava"} src={NC} sx={{ width: 50, height: 50 }} />
+          <h2 style={{ marginLeft: "30px", fontFamily: "Poppins" }}>
+            {" "}
+            Needless Complexity{" "}
+          </h2>
+        </Box>
+        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <Divider light sx={{ padding: "10px" }} />
 
-          <h2 style={{  marginLeft: "835px" }}> Needless Complexity </h2>
-          <YoutubeEmbed embedId="BVHMLs_N7SQ"/>
+        <Box
+          sx={{
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <Avatar alt={"ava"} src={MD} sx={{ width: 50, height: 50 }} />
+          <h2 style={{ marginLeft: "30px", fontFamily: "Poppins" }}>
+            {" "}
+            Misdirection{" "}
+          </h2>
+        </Box>
+        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <Divider light sx={{ padding: "10px" }} />
 
-          <h2 style={{ marginLeft: "880px" }}> Misdirection </h2>
-          <YoutubeEmbed embedId="BVHMLs_N7SQ"/>
+        <Box
+          sx={{
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <Avatar alt={"ava"} src={CS} sx={{ width: 50, height: 50 }} />
+          <h2 style={{ marginLeft: "30px", fontFamily: "Poppins" }}>
+            {" "}
+            Confirmshaming{" "}
+          </h2>
+        </Box>
+        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <Divider light sx={{ padding: "10px" }} />
 
-          <h2 style={{ marginLeft: "880px" }}> Confirmshaming </h2>
-          <YoutubeEmbed embedId="BVHMLs_N7SQ"/>
+        <Box
+          sx={{
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <Avatar alt={"ava"} src={PZ} sx={{ width: 50, height: 50 }} />
+          <h2 style={{ marginLeft: "30px", fontFamily: "Poppins" }}>
+            {" "}
+            Privacy Zuckering{" "}
+          </h2>
+        </Box>
+        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <Divider light sx={{ padding: "10px" }} />
 
-          <h2 style={{  marginLeft: "865px" }}> Privacy Zuckering </h2>
-          <YoutubeEmbed embedId="BVHMLs_N7SQ"/>
+        <Box
+          sx={{
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <Avatar alt={"ava"} src={DA} sx={{ width: 50, height: 50 }} />
+          <h2 style={{ marginLeft: "30px", fontFamily: "Poppins" }}>
+            {" "}
+            Disguised Ads{" "}
+          </h2>
+        </Box>
+        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <Divider light sx={{ padding: "10px" }} />
+
+        <Box
+          sx={{
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <Avatar alt={"ava"} src={SB} sx={{ width: 50, height: 50 }} />
+          <h2 style={{ marginLeft: "30px", fontFamily: "Poppins" }}>
+            {" "}
+            Sneak into Basket{" "}
+          </h2>
+        </Box>
+        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+
+        <Button
+          variant="text"
+          sx={{ color: "White", fontFamily: "Poppins", marginLeft: "825px", backgroundColor: "#253030" }}
+          onClick={EDPHandler}
+        >
+          Test Your Knowledge
+        </Button>
       </Box>
-      <Footer/>
     </>
   );
 };
 
 export default DPT;
-

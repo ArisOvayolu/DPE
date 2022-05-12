@@ -7,6 +7,8 @@ import ContinousSpam from "../img/Google/Continous Spam.png";
 import Badge from "@mui/material/Badge";
 import SportsScoreIcon from "@mui/icons-material/SportsScore";
 import Grid from "@mui/material/Grid";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import Footer from "../components/Footer";
 
 
 const Data = [
@@ -32,6 +34,8 @@ const Data = [
       correctOption: "3",
     },
   ];
+
+  const normalise = (value)=> ((value- 0)*100)/(3-0);
   
   const Google = () => {
     const [score, setScore] = useState(0);
@@ -43,7 +47,8 @@ const Data = [
     return (
       <>
         <Header />
-        <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>
+        <LinearProgress variant="determinate" value={normalise(score)} />
+        <h1 style={{ paddingTop: "25px", marginLeft: "825px", paddingBottom: "45px" }}>
         Google's Dark Patterns
       </h1>
       {score !== 3 ? (
@@ -78,6 +83,7 @@ const Data = [
         ) : (
           <>
           <h1>Completed!</h1>
+          
           </>
         )}
       </>

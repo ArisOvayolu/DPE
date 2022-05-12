@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
-import Footer from "./components/Footer";
 import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import Fab from "@mui/material/Fab";
 
 const Contact = () => {
@@ -10,16 +10,17 @@ const Contact = () => {
     <>
       <Header />
       <Box sx={{ marginBottom: "500px" }}>
-        <h1 style={{ marginLeft: "825px" }}> Get in Contact </h1>
+        <h1 style={{ marginLeft: "795px", fontFamily: 'Abril Fatface', fontSize:45 }}> Get in Contact </h1>
         <p
           style={{
             padding: "10px",
-            paddingLeft: "650px",
-            paddingRight: "300px",
+            paddingLeft: "550px",
+            paddingRight: "550px",
+            fontSize:20,
+            fontFamily: 'Montserrat'
           }}
         >
-          Follow this email link to give us submissions of Dark Pattern usage
-          and/or for any other queries.
+          Please do not hesitate to get in contact!
         </p>
         <Fab
           variant="extended"
@@ -29,12 +30,35 @@ const Contact = () => {
               "_blank"
             );
           }}
-          sx={{ marign: "auto", marginLeft: "45%" }}
+          sx={{ marign: "auto", marginLeft: "46%" }}
         >
-          Navigate <EmailIcon sx={{ mr: 1 }} />
+          Email <EmailIcon sx={{ mr: 0 }} />
+        </Fab>
+        <p
+          style={{
+            padding: "10px",
+            paddingLeft: "550px",
+            paddingRight: "550px",
+            fontSize:20,
+            fontFamily: 'Montserrat'
+          }}
+        >
+          Find me on Linkedin!
+        </p> 
+        <Fab
+          variant="extended"
+          onClick={() => {
+            window.open(
+              "https://uk.linkedin.com/in/aris-m-ovayolu-722647157?msclkid=365f8e52cfcd11ec928539b45ccd3297",
+              "_blank"
+            );
+          }}
+          sx={{ marign: "auto", marginLeft: "46%" }}
+        >
+          Linkedin <LinkedInIcon sx={{ mr: 0 }} />
         </Fab>
       </Box>
-      <Footer />
+      
     </>
   );
 };
