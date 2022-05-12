@@ -25,6 +25,7 @@ const EDP = () => {
   return (
     <>
       <Header />
+
       <h1
         style={{ marginLeft: "735px", fontFamily: "Poppins", padding: "25px" }}
       >
@@ -32,6 +33,37 @@ const EDP = () => {
         Expose The Dark Patterns{" "}
       </h1>
       <Divider />
+      <h3
+        style={{ marginLeft: "850px", fontFamily: "Poppins", padding: "5px" }}
+      >
+        Test Your Knowledge
+      </h3>
+      <p
+        style={{
+          paddingTop: "40px",
+          marginLeft: "600px",
+          fontFamily: "Helvetica",
+          fontSize: 19,
+        }}
+      >
+        Now that we've learnt a bit more about dark patterns, its time to test
+        our knowledge!
+      </p>
+      <p
+        style={{
+          paddingTop: "10px",
+          marginLeft: "645px",
+          fontFamily: "Helvetica",
+          fontSize: 19,
+        }}
+      >
+        Before you are three
+        <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
+          {" "}
+          infamous wielders
+        </span>{" "}
+        of dark patterns to pick from.
+      </p>
       <div
         style={{
           width: "425px",
@@ -46,7 +78,7 @@ const EDP = () => {
             borderRadius: "50px",
             padding: "10px",
             marginLeft: "1495px",
-            marginTop: "60px",
+            marginTop: "40px",
           }}
         >
           <Stack
@@ -67,29 +99,18 @@ const EDP = () => {
           </Stack>
         </Paper>
       </div>
-      <Box>
+      <Box sx={{ paddingTop: "30px" }}>
         <p
           style={{
-            paddingTop: "40px",
-            marginLeft: "600px",
-            marginRight: "600px",
+            paddingTop: "20px",
+            marginLeft: "880px",
             fontFamily: "Helvetica",
             fontSize: 19,
           }}
         >
-          Welcome to the interactive learning page! You have three infamous
-          implementors of dark patterns to pick from: Facebook, Amazon and
-          Google to test your knowledge on dark pattern techniques!
-        </p>
-        <p
-          style={{
-            marginLeft: "650px",
-            marginRight: "600px",
-            fontFamily: "Helvetica",
-            fontSize: 19,
-          }}
-        >
-          Select one and expose the dark patterns that these companies use!
+          <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
+            Choose Wisely!
+          </span>
         </p>
       </Box>
     </>

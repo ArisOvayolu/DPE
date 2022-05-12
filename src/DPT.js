@@ -11,9 +11,15 @@ import NC from "./img/DPT/NeedlessComplexity.jpg";
 import DA from "./img/DPT/DisguisedAds.jpg";
 import SB from "./img/DPT/SneakintoBasket.jpg";
 import CS from "./img/DPT/ConfirmShaming.jpg";
+import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
+import { useNavigate } from "react-router-dom";
 
 const DPT = () => {
+  const Navigate = useNavigate();
+  const EDPHandler = () => {
+    Navigate("/ExposeTheDarkPatterns");
+  };
   return (
     <>
       <StatusBar></StatusBar>
@@ -161,6 +167,14 @@ const DPT = () => {
           </h2>
         </Box>
         <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+
+        <Button
+          variant="text"
+          sx={{ color: "White", fontFamily: "Poppins", marginLeft: "825px", backgroundColor: "#253030" }}
+          onClick={EDPHandler}
+        >
+          Test Your Knowledge
+        </Button>
       </Box>
     </>
   );
