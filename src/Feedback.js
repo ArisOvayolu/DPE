@@ -1,12 +1,11 @@
 import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
-import Footer from "./components/Footer";
 import StatusBar from "./components/StatusBar";
 
 
 
-const Alternative = () => {
+const Feedback = () => {
   return (
     <>
       <StatusBar></StatusBar>  
@@ -17,4 +16,4 @@ const Alternative = () => {
   );
 };
 
-export default Alternative;
+export default Feedback;

@@ -21,8 +21,8 @@ const Header = () => {
   const aboutHandler = () => {
     Navigate("/About");
   };
-  const alternativeHandler = () => {
-    Navigate("/AlternativeDesign");
+  const feedbackHandler = () => {
+    Navigate("/Feedback");
   };
   return (
     <>
@@ -77,9 +77,9 @@ const Header = () => {
           <Button
             variant="text"
             sx={{ color: "white", fontFamily: "Poppins" }}
-            onClick={alternativeHandler}
+            onClick={feedbackHandler}
           >
-            Alternative Design
+            User Feedback
           </Button>
           <Button
             variant="text"
