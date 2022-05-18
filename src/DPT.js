@@ -58,7 +58,7 @@ const DPT = () => {
             Hidden Cost{" "}
           </h2>
         </Box>
-        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <YoutubeEmbed embedId="-xK02zueCuY" />
         <Divider light />
 
         <Box
@@ -76,7 +76,7 @@ const DPT = () => {
             Needless Complexity{" "}
           </h2>
         </Box>
-        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <YoutubeEmbed embedId="D2lOt-kpXP4" />
         <Divider light sx={{ padding: "10px" }} />
 
         <Box
@@ -94,7 +94,7 @@ const DPT = () => {
             Misdirection{" "}
           </h2>
         </Box>
-        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <YoutubeEmbed embedId="6ZfhMkd07GU" />
         <Divider light sx={{ padding: "10px" }} />
 
         <Box
@@ -112,7 +112,7 @@ const DPT = () => {
             Confirmshaming{" "}
           </h2>
         </Box>
-        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <YoutubeEmbed embedId="rPvrPuthUi0" />
         <Divider light sx={{ padding: "10px" }} />
 
         <Box
@@ -130,7 +130,7 @@ const DPT = () => {
             Privacy Zuckering{" "}
           </h2>
         </Box>
-        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <YoutubeEmbed embedId="KQHST_gYkzc" />
         <Divider light sx={{ padding: "10px" }} />
 
         <Box
@@ -148,7 +148,7 @@ const DPT = () => {
             Disguised Ads{" "}
           </h2>
         </Box>
-        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <YoutubeEmbed embedId="-wVWqzbcmcE" />
         <Divider light sx={{ padding: "10px" }} />
 
         <Box
@@ -166,7 +166,7 @@ const DPT = () => {
             Sneak into Basket{" "}
           </h2>
         </Box>
-        <YoutubeEmbed embedId="BVHMLs_N7SQ" />
+        <YoutubeEmbed embedId="dVoPKDZuXJ0" />
 
         <Button
           variant="text"
