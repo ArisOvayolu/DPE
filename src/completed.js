@@ -45,7 +45,7 @@ const Completed = () => {
             paddingBottom: "20px"
           }}
         >
-          Its safe to say you're becoming a bit of an{" "}
+          It's safe to say you're becoming a bit of an{" "}
           <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
             expert
           </span>{" "}

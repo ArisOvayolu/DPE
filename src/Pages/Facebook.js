@@ -29,10 +29,10 @@ const Data = [
   },
   {
     img: FBNC,
-    option1: "All of the Dark Patterns Below Apply",
+    option1: "Misdirection and Privacy Zuckering",
     option2: "Hidden Costs and Misdirection",
     option3: "Needless Complexity and Misdirection",
-    correctOption: "3",
+    correctOption: "1",
   },
 ];
 

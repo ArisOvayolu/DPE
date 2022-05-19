@@ -8,7 +8,8 @@ import FormHelperText from "@mui/material/FormHelperText";
 import FormLabel from "@mui/material/FormLabel";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
-import { Box, maxWidth } from "@mui/system";
+import { Box } from "@mui/system";
+import { Divider } from "@mui/material";
 
 
 const Game = (props) => {
@@ -26,16 +27,21 @@ const Game = (props) => {
     event.preventDefault();
 
     if (value === data.correctOption) {
+      setHelperText("Choose wisely!")
       setError(false);
       scoreSetter(1);
+      setValue('');
     } else if (value !== data.correctOption) {
       setHelperText("Sorry, wrong answer!");
       setError(true);
+      setValue('');
     } else {
       setHelperText("Please select an option.");
       setError(true);
+      setValue('');
     }
   };
+  
 
   return (
     <Box 
@@ -74,12 +80,14 @@ const Game = (props) => {
                       sx = {{mb:"10px"}}
                       label={`${data.option1}`}
                     />
+                    <Divider />
                     <FormControlLabel
                       value="2"
                       control={<Radio />}
                       sx = {{mb:"10px"}}
                       label={`${data.option2}`}
                     />
+                    <Divider />
                     <FormControlLabel
                       value="3"
                       control={<Radio />}
