@@ -38,7 +38,7 @@ const About = () => {
         </h1>
         <Divider light sx={{ padding: "10px" }} />
         <Grid container justifyContent="center" item xs={12} sx={{paddingTop:"40px"}}>
-          <Card sx={{ padding: "10px", paddingTop:"10px" }}>
+          <Card sx={{ padding: "10px", paddingTop:"10px", backgroundColor: "#EBF2F2" }}>
             <CardMedia
               component="img"
               height="300"

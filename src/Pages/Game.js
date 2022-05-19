@@ -15,7 +15,7 @@ const Game = (props) => {
   const { data, scoreSetter } = props;
   const [value, setValue] = React.useState("");
   const [error, setError] = React.useState(false);
-  const [helperText, setHelperText] = React.useState("Choose wisely");
+  const [helperText, setHelperText] = React.useState("Choose wisely!");
   const handleRadioChange = (event) => {
     setValue(event.target.value);
     setHelperText(" ");
@@ -43,9 +43,9 @@ const Game = (props) => {
     justifyContent='center'
     alignItems='center'
     >
-      <Paper elevation={24} sx={{borderRadius:'50px', margin:'auto', padding:'30px'}}>
+      <Paper elevation={1} sx={{borderRadius:'50px', padding:'30px', minHeight:"450px", minWidth:"700px", backgroundColor: "#EBF2F2"}}>
         <Grid spacing={1} container display='flex' justifyContent='center' alignItems='center'>
-          <Grid xs={6} item >
+          <Grid xs={9} item >
             <img
               src={data.img}
               alt="img1"
@@ -57,11 +57,11 @@ const Game = (props) => {
               }}
             />
           </Grid>
-          <Grid xs={6} item   sx={{ justifyContent:'space-around',display: "flex"}} >
-            <Paper elevation={1} sx={{borderRadius:'10px'}} >
+          <Grid xs={3} item   sx={{ justifyContent:'space-around',display: "flex"}} >
+            <Paper elevation={3} sx={{borderRadius:'10px'}} >
               <form onSubmit={handleSubmit}>
                 <FormControl sx={{ m: 3, borderRadius:'40px' }} error={error} variant="standard">
-                  <FormLabel id="demo-error-radios">Which Dark Pattern is is it?</FormLabel>
+                  <FormLabel sx={{mb:"10px"}} id="demo-error-radios">Pick the correct Dark Pattern!</FormLabel>
                   <RadioGroup
                     aria-labelledby="demo-error-radios"
                     name="quiz"
@@ -71,16 +71,19 @@ const Game = (props) => {
                     <FormControlLabel
                       value="1"
                       control={<Radio />}
+                      sx = {{mb:"10px"}}
                       label={`${data.option1}`}
                     />
                     <FormControlLabel
                       value="2"
                       control={<Radio />}
+                      sx = {{mb:"10px"}}
                       label={`${data.option2}`}
                     />
                     <FormControlLabel
                       value="3"
                       control={<Radio />}
+                      sx = {{mb:"10px"}}
                       label={`${data.option3}`}
                     />
                   </RadioGroup>

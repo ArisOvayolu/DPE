@@ -10,6 +10,7 @@ import Amazon from "./Pages/Amazon";
 import About from "./About";
 import Feedback from "./Feedback";
 import Footer from "./components/Footer";
+import Completed from "./completed";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/ExposeTheDarkPatterns/Amazon" element={<Amazon />} />
           <Route path="/About" element = {<About/>} />
           <Route path="/Feedback" element = {<Feedback/>} />
+          <Route path="/Completed" element = {<Completed/>} />
         </Routes>
       </BrowserRouter>
       <Footer/>
