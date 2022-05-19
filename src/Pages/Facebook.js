@@ -9,7 +9,7 @@ import SportsScoreIcon from "@mui/icons-material/SportsScore";
 import Grid from "@mui/material/Grid";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { Box } from "@mui/system";
-import Paper from "@mui/material/Paper";
+import Divider from "@mui/material/Divider";
 
 const Data = [
   {
@@ -49,28 +49,59 @@ const Facebook = () => {
       <Header />
       <Box diplay="flex">
         <LinearProgress variant="determinate" value={normalise(score)} />
-        <h1
+        <h2
           style={{
             paddingTop: "25px",
-            marginLeft: "825px",
-            paddingBottom: "45px",
+            marginLeft: "790px",
+            fontFamily: "Poppins",
           }}
         >
           Facebook's Dark Patterns
-        </h1>
+        </h2>
+        <Divider light sx={{ padding: "10", mb: "50px" }} />
+        <p
+          style={{
+            paddingTop: "15px",
+            marginLeft: "620px",
+            fontFamily: "Helvetica",
+            fontSize: 20,
+          }}
+        >
+          Look at the image carefully and{" "}
+          <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
+            identify
+          </span>{" "}
+          the correct{" "}
+          <span style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}>
+            {" "}
+            dark pattern{" "}
+          </span>
+          technique.
+        </p>
+        <p
+          style={{
+            paddingTop: "20px",
+            paddingBottom: "80px",
+            marginLeft: "880px",
+            fontFamily: "Poppins",
+            fontSize: 20,
+          }}
+        >
+          Good Luck!
+        </p>
         {score !== 3 ? (
           <>
-          <Grid container flexGrow={1} spacing={2}>
-            <Grid item xs={1}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  margin: "auto",
-                }}
-              >
-                <Paper elevation={24} sx={{borderRadius:'50px', margin:'auto'}}>
-                  <h3>Score</h3>
+            <Grid container flexGrow={1} spacing={2}>
+              <Grid item flexGrow={1} xs={1}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    margin: "auto",
+                    justifyContent: "flex-end",
+                  }}
+                >
+                  <h3 style={{ fontFamily: "Poppins" }}>Score</h3>
                   <Badge
                     badgeContent={score}
                     sx={{ height: "50px", width: "50px" }}
@@ -81,17 +112,18 @@ const Facebook = () => {
                       sx={{ height: "75px", width: "75px" }}
                     />
                   </Badge>
-                </Paper>
-              </div>
+                </div>
+              </Grid>
+              <Grid item xs={10}>
+                <Game data={Data[score]} scoreSetter={scoreSetter} />
+              </Grid>
             </Grid>
-            <Grid item xs={11}>
-              <Game data={Data[score]} scoreSetter={scoreSetter} />
-            </Grid>
-          </Grid>
           </>
         ) : (
           <>
-            <h1>Completed!</h1>
+            <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>
+              Completed!
+            </h1>
           </>
         )}
       </Box>

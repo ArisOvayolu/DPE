@@ -8,7 +8,7 @@ import Badge from "@mui/material/Badge";
 import SportsScoreIcon from "@mui/icons-material/SportsScore";
 import Grid from "@mui/material/Grid";
 import LinearProgress from "@material-ui/core/LinearProgress";
-import Footer from "../components/Footer";
+import Divider from "@mui/material/Divider";
 
 const Data = [
   {
@@ -34,7 +34,7 @@ const Data = [
   },
 ];
 
-const normalise = (value)=> ((value- 0)*100)/(3-0);
+const normalise = (value) => ((value - 0) * 100) / (3 - 0);
 
 const Amazon = () => {
   const [score, setScore] = useState(0);
@@ -47,21 +47,59 @@ const Amazon = () => {
     <>
       <Header />
       <LinearProgress variant="determinate" value={normalise(score)} />
-      <h1 style={{ paddingTop: "25px", marginLeft: "825px", paddingBottom: "45px" }}>
+      <h2
+        style={{
+          paddingTop: "25px",
+          marginLeft: "795px",
+          fontFamily: "Poppins",
+        }}
+      >
         Amazons's Dark Patterns
-      </h1>
+      </h2>
+      <Divider light sx={{ padding: "10", mb: "50px" }} />
+      <p
+        style={{
+          paddingTop: "15px",
+          marginLeft: "620px",
+          fontFamily: "Helvetica",
+          fontSize: 20,
+        }}
+      >
+        Look at the image carefully and{" "}
+        <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
+          identify
+        </span>{" "}
+        the correct{" "}
+        <span style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}>
+          {" "}
+          dark pattern{" "}
+        </span>
+        technique.
+      </p>
+      <p
+        style={{
+          paddingTop: "20px",
+          paddingBottom: "80px",
+          marginLeft: "880px",
+          fontFamily: "Poppins",
+          fontSize: 20,
+        }}
+      >
+        Good Luck!
+      </p>
       {score !== 3 ? (
         <>
-          <Grid container spacing={2}>
-            <Grid item xs={1}>
+          <Grid container flexSGrow={1} spacing={2}>
+            <Grid item flexGrow={1} xs={1}>
               <div
                 style={{
                   display: "flex",
                   flexDirection: "row",
-                  margin:'auto'
+                  margin: "auto",
+                  justifyContent: "flex-end",
                 }}
               >
-                <h3>Score</h3>
+                <h3 style={{ fontFamily: "Poppins" }}>Score</h3>
                 <Badge
                   badgeContent={score}
                   sx={{ height: "50px", width: "50px" }}
@@ -74,17 +112,18 @@ const Amazon = () => {
                 </Badge>
               </div>
             </Grid>
-            <Grid item xs={11}>
+            <Grid item xs={10}>
               <Game data={Data[score]} scoreSetter={scoreSetter} />
             </Grid>
           </Grid>
         </>
       ) : (
         <>
-          <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>Completed!</h1>
+          <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>
+            Completed!
+          </h1>
         </>
       )}
-      
     </>
   );
 };
