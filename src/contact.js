@@ -2,26 +2,44 @@ import React from "react";
 import Header from "./components/Header";
 import Box from "@mui/material/Box";
 import EmailIcon from "@mui/icons-material/Email";
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Fab from "@mui/material/Fab";
+import { Divider } from "@mui/material";
 
 const Contact = () => {
   return (
     <>
       <Header />
-      <Box sx={{ marginBottom: "500px" }}>
-        <h1 style={{ marginLeft: "795px", fontFamily: 'Abril Fatface', fontSize:45 }}> Get in Contact </h1>
-        <p
+      <Box
+        sx={{
+          margin: "50px",
+          backgroundColor: "#E1E8E8",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          alignContent: "center",
+        }}
+      >
+        <h1
           style={{
-            padding: "10px",
-            paddingLeft: "550px",
-            paddingRight: "550px",
-            fontSize:20,
-            fontFamily: 'Montserrat'
+            fontFamily: "Poppins",
+          }}
+        >
+          {" "}
+          Get in Contact{" "}
+        </h1>
+        <Divider sx={{ minWidth: "100%" }} variant="fullWidth" />
+        <h3
+          style={{
+            paddingTop: "20px",
+            paddingBottom: "40px",
+            fontSize: 18,
+            fontFamily: "Poppins",
           }}
         >
           Please do not hesitate to get in contact!
-        </p>
+        </h3>
         <Fab
           variant="extended"
           onClick={() => {
@@ -30,21 +48,24 @@ const Contact = () => {
               "_blank"
             );
           }}
-          sx={{ marign: "auto", marginLeft: "46%" }}
+          sx={{ marign: "auto", backgroundColor: "white" }}
         >
           Email <EmailIcon sx={{ mr: 0 }} />
         </Fab>
-        <p
+        <Divider
+          light
+          sx={{ minWidth: "100%", paddingTop: "40px" }}
+          variant="fullWidth"
+        />
+        <h3
           style={{
-            padding: "10px",
-            paddingLeft: "550px",
-            paddingRight: "550px",
-            fontSize:20,
-            fontFamily: 'Montserrat'
+            paddingTop: "20px",
+            paddingBottom: "40px",
+            fontFamily: "Poppins",
           }}
         >
           Find me on Linkedin!
-        </p> 
+        </h3>
         <Fab
           variant="extended"
           onClick={() => {
@@ -53,12 +74,16 @@ const Contact = () => {
               "_blank"
             );
           }}
-          sx={{ marign: "auto", marginLeft: "46%" }}
+          sx={{ marign: "auto", backgroundColor: "white" }}
         >
           Linkedin <LinkedInIcon sx={{ mr: 0 }} />
         </Fab>
+        <Divider
+          light
+          sx={{ minWidth: "100%", paddingTop: "40px" }}
+          variant="fullWidth"
+        />
       </Box>
-      
     </>
   );
 };
