@@ -73,7 +73,7 @@ const DPT = () => {
           <Avatar alt={"ava"} src={NC} sx={{ width: 50, height: 50 }} />
           <h2 style={{ marginLeft: "30px", fontFamily: "Poppins" }}>
             {" "}
-            Needless Complexity{" "}
+            Needless Complexity / "Roach Motel"{" "}
           </h2>
         </Box>
         <YoutubeEmbed embedId="D2lOt-kpXP4" />

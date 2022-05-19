@@ -59,7 +59,7 @@ const Facebook = () => {
         >
           Facebook's Dark Patterns
         </h2>
-        <Divider light sx={{ padding: "10", mb: "50px" }} />
+        <Divider light />
         <p
           style={{
             paddingTop: "15px",
@@ -82,7 +82,6 @@ const Facebook = () => {
         <p
           style={{
             paddingTop: "20px",
-            paddingBottom: "80px",
             marginLeft: "880px",
             fontFamily: "Poppins",
             fontSize: 21,
@@ -90,6 +89,7 @@ const Facebook = () => {
         >
           Good Luck!
         </p>
+        <Divider sx={{ mb: "80px" }} />
         {score !== 3 ? (
           <>
             <Grid container flexGrow={1} spacing={2}>
