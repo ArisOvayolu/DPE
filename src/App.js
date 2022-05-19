@@ -27,7 +27,7 @@ function App() {
           <Route path="/ExposeTheDarkPatterns/Amazon" element={<Amazon />} />
           <Route path="/About" element = {<About/>} />
           <Route path="/Feedback" element = {<Feedback/>} />
-          <Route path="/Completed" element = {<Completed/>} />
+          <Route path="/ExposeTheDarkPatterns/Completed" element = {<Completed/>} />
         </Routes>
       </BrowserRouter>
       <Footer/>

@@ -24,7 +24,7 @@ const DPT = () => {
     <>
       <StatusBar></StatusBar>
       <Header />
-      <Box sx={{ margin: "40px", backgroundColor: "#E1E8E8" }}>
+      <Box sx={{ margin: "50px", backgroundColor: "#E1E8E8" }}>
         <h1
           style={{
             padding: "20px",

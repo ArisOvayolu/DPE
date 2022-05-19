@@ -11,31 +11,115 @@ const Completed = () => {
   const FeedbackHandler = () => {
     Navigate("/Feedback");
   };
+  const EDPHandler = () => {
+    Navigate("/ExposeTheDarkPatterns");
+  };
   return (
     <>
       <StatusBar></StatusBar>
       <Header />
-      <Box sx={{ margin: "40px", backgroundColor: "#E1E8E8" }}>
-        <h2
+      <Box
+        sx={{
+          margin: "50px",
+          backgroundColor: "#E1E8E8",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          alignContent: "center",
+        }}
+      >
+        <h1
           style={{
-            padding: "20px",
-            paddingTop: "50px",
-            marginLeft: "700px",
+            paddingTop: "20px",
             fontFamily: "Poppins",
           }}
         >
           {" "}
           Good Work!{" "}
-        </h2>
-        <Divider light sx={{ padding: "10px" }} />
-
+        </h1>
+        <p
+          style={{
+            fontFamily: "Helvetica",
+            fontSize: 19,
+            paddingBottom: "20px"
+          }}
+        >
+          Its safe to say you're becoming a bit of an{" "}
+          <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
+            expert
+          </span>{" "}
+          on dark pattern techniques now!
+        </p>
+        <Divider
+          light
+          sx={{ minWidth: "100%", mb: "20px" }}
+          variant="fullWidth"
+        />
+        <p
+          style={{
+            fontFamily: "Helvetica",
+            fontSize: 19,
+            paddingBottom:"20px"
+          }}
+        >
+          Try another quiz to further test your knowledge!
+        </p>
         <Button
           variant="text"
-          sx={{ color: "White", fontFamily: "Poppins", marginLeft: "825px", backgroundColor: "#253030" }}
+          sx={{
+            color: "White",
+            fontFamily: "Poppins",
+            backgroundColor: "#253030",
+          }}
+          onClick={EDPHandler}
+        >
+          Try another interface
+        </Button>
+        <Divider
+          light
+          sx={{ minWidth: "100%", mb: "10px", mt: "40px" }}
+          variant="fullWidth"
+        />
+        <p
+          style={{
+            fontFamily: "poppins",
+            fontSize: 19,
+          }}
+        >
+          Already completed them all?
+        </p>
+        <p
+          style={{
+            fontFamily: "Helvetica",
+            fontSize: 19,
+            paddingBottom: "20px",
+          }}
+        >
+          Please check out the feedback page, your input will greatly help
+          future work on this website and will also be used for research
+          purposes.
+        </p>
+        <Button
+          variant="text"
+          sx={{
+            color: "White",
+            fontFamily: "Poppins",
+            backgroundColor: "#253030",
+          }}
           onClick={FeedbackHandler}
         >
-          Test Your Knowledge
+          Leave Feedback
         </Button>
+        <p
+          style={{
+            fontFamily: "Helvetica",
+            paddingTop: "30px",
+            fontSize: 19,
+          }}
+        >
+          Thank you for your support!
+        </p>
       </Box>
     </>
   );

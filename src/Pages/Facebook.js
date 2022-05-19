@@ -10,6 +10,7 @@ import Grid from "@mui/material/Grid";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { Box } from "@mui/system";
 import Divider from "@mui/material/Divider";
+import Completed from "../completed";
 
 const Data = [
   {
@@ -84,7 +85,7 @@ const Facebook = () => {
             paddingBottom: "80px",
             marginLeft: "880px",
             fontFamily: "Poppins",
-            fontSize: 20,
+            fontSize: 21,
           }}
         >
           Good Luck!
@@ -121,9 +122,7 @@ const Facebook = () => {
           </>
         ) : (
           <>
-            <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>
-              Completed!
-            </h1>
+            <Completed />
           </>
         )}
       </Box>

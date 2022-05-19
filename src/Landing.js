@@ -27,9 +27,8 @@ const Landing = () => {
           style={{
             paddingTop: "45px",
             paddingBottom: "25px",
-            marginLeft: "690px",
+            marginLeft: "700px",
             fontFamily: "Poppins",
-            fontSize: 38,
           }}
         >
           What are Dark Patterns?

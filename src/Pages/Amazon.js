@@ -9,6 +9,8 @@ import SportsScoreIcon from "@mui/icons-material/SportsScore";
 import Grid from "@mui/material/Grid";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Divider from "@mui/material/Divider";
+import Completed from "../completed";
+import { useNavigate } from "react-router-dom";
 
 const Data = [
   {
@@ -56,7 +58,7 @@ const Amazon = () => {
       >
         Amazons's Dark Patterns
       </h2>
-      <Divider light sx={{ padding: "10", mb: "50px" }} />
+      <Divider light />
       <p
         style={{
           paddingTop: "15px",
@@ -79,14 +81,14 @@ const Amazon = () => {
       <p
         style={{
           paddingTop: "20px",
-          paddingBottom: "80px",
           marginLeft: "880px",
           fontFamily: "Poppins",
-          fontSize: 20,
+          fontSize: 21,
         }}
       >
         Good Luck!
       </p>
+      <Divider sx={{ mb: "80px" }} />
       {score !== 3 ? (
         <>
           <Grid container flexSGrow={1} spacing={2}>
@@ -119,9 +121,7 @@ const Amazon = () => {
         </>
       ) : (
         <>
-          <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>
-            Completed!
-          </h1>
+          <Completed />
         </>
       )}
     </>

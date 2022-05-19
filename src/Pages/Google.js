@@ -9,12 +9,13 @@ import SportsScoreIcon from "@mui/icons-material/SportsScore";
 import Grid from "@mui/material/Grid";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Divider from "@mui/material/Divider";
+import Completed from "../completed";
 
 const Data = [
   {
     img: DisguisedAds,
     option1: "Disguised Ads",
-    option2: "Continous Spam",
+    option2: "Sneak into Basket",
     option3: "Needless Complexity",
     correctOption: "1",
   },
@@ -27,9 +28,9 @@ const Data = [
   },
   {
     img: ContinousSpam,
-    option1: "Continous Spam and Misdirection",
+    option1: "Misdirection",
     option2: "Misdirection and Privacy Zuckering",
-    option3: "Continous Spam and Privacy Zuckering",
+    option3: "Privacy Zuckering",
     correctOption: "3",
   },
 ];
@@ -83,7 +84,7 @@ const Google = () => {
           paddingBottom: "80px",
           marginLeft: "880px",
           fontFamily: "Poppins",
-          fontSize: 20,
+          fontSize: 21,
         }}
       >
         Good Luck!
@@ -120,9 +121,7 @@ const Google = () => {
         </>
       ) : (
         <>
-          <h1 style={{ paddingTop: "25px", marginLeft: "825px" }}>
-            Completed!
-          </h1>
+          <Completed />
         </>
       )}
     </>
