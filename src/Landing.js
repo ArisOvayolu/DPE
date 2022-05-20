@@ -27,9 +27,8 @@ const Landing = () => {
           style={{
             paddingTop: "45px",
             paddingBottom: "25px",
-            marginLeft: "690px",
+            marginLeft: "700px",
             fontFamily: "Poppins",
-            fontSize: 38,
           }}
         >
           What are Dark Patterns?
@@ -321,7 +320,7 @@ const Landing = () => {
             fontSize: 19,
           }}
         >
-          <span style={{color: "black", fontSize:19, fontFamily:"Poppins"}}>Piqued your interest?</span> Let's have a more in depth look at the different
+          <span style={{color: "black", fontSize:21, fontFamily:"Poppins"}}>Piqued your interest?</span> Let's have a more in depth look at the different
           techniques.
         </p>
         <Button

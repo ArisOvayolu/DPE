@@ -24,21 +24,40 @@ const About = () => {
     <>
       <StatusBar></StatusBar>
       <Header />
-      <Box sx={{ margin: "50px", backgroundColor: "#E1E8E8" }}>
+      <Box
+        sx={{
+          margin: "50px",
+          backgroundColor: "#E1E8E8",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          alignContent: "center",
+        }}
+      >
         <h1
           style={{
-            paddingTop: "40px",
-            marginLeft: "840px",
+            paddingTop: "30px",
+            paddingBottom: "20px",
             fontFamily: "Poppins",
-            fontSize: 40,
           }}
         >
           {" "}
           About{" "}
         </h1>
-        <Divider light sx={{ padding: "10px" }} />
-        <Grid container justifyContent="center" item xs={12} sx={{paddingTop:"40px"}}>
-          <Card sx={{ padding: "10px", paddingTop:"10px" }}>
+        <Divider light sx={{minWidth:'100%'}} variant="fullWidth" />
+        <Grid
+          container
+          justifyContent="center"
+          item
+          xs={12}
+          sx={{ paddingTop: "40px" }}
+        >
+          <Card
+            sx={{
+              backgroundColor: "#EBF2F2",
+            }}
+          >
             <CardMedia
               component="img"
               height="300"
@@ -63,7 +82,12 @@ const About = () => {
                     "_blank"
                   );
                 }}
-                sx={{ marign: "auto", marginLeft: "28%", color: "black", backgroundColor:"#E1E8E8" }}
+                sx={{
+                  marign: "auto",
+                  marginLeft: "28%",
+                  color: "black",
+                  backgroundColor: "#E1E8E8",
+                }}
               >
                 Linkedin <LinkedInIcon sx={{ mr: 0, color: "black" }} />
               </Fab>
@@ -74,7 +98,6 @@ const About = () => {
           style={{
             paddingTop: "50px",
             paddingBottom: "10px",
-            marginLeft: "890px",
             fontFamily: "Poppins",
             fontSize: 21,
           }}
@@ -92,10 +115,12 @@ const About = () => {
             fontSize: 19,
           }}
         >
-          <span style={{color: "black", fontSize:25, fontFamily:"Poppins"}}>Hello, world! </span>
-          My name is Aris, and I am a third-year computer science
-          student at Newcastle University. I’ve always been interested in the
-          psychology behind the designing of user experiences; why are certain
+          <span style={{ color: "black", fontSize: 25, fontFamily: "Poppins" }}>
+            Hello, world!{" "}
+          </span>
+          My name is Aris, and I am a third-year computer science student at
+          Newcastle University. I’ve always been interested in the psychology
+          behind the designing of user experiences; why are certain
           applications/website so addicting to use? How do some of these
           applications/websites become so integral to the consumers day to day
           life?
@@ -139,12 +164,11 @@ const About = () => {
           ultimate aim of this website is to educate the average web user of
           these deceptive design techniques.
         </p>
-        <Divider sx={{ padding: "10px" }} />
+        <Divider light sx={{minWidth:'100%'}} variant="fullWidth" />
         <h1
           style={{
             paddingTop: "25px",
             paddingBottom: "30px",
-            marginLeft: "730px",
             fontFamily: "Poppins",
           }}
         >
@@ -170,21 +194,28 @@ const About = () => {
             padding: "1px",
             paddingLeft: "435px",
             paddingRight: "400px",
-            paddingBottom: "20px",
+            paddingBottom: "30px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
             fontSize: 19,
           }}
         >
-          <span style={{color: "black", fontSize:19, fontFamily:"Poppins"}}>What does that mean?</span> Well, one of the ways we were thinking of adding
-          more user input is by adding a page that allows users to submit their
-          own experiences with coming across dark patterns. For now though, do
-          not hesitate to contact us by navigating to the contact page, your
-          feedback is very much so appreciated!
+          <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
+            What does that mean?
+          </span>{" "}
+          Well, one of the ways we were thinking of adding more user input is by
+          adding a page that allows users to submit their own experiences with
+          coming across dark patterns. For now though, do not hesitate to
+          contact us by navigating to the contact page, your feedback is very
+          much so appreciated!
         </p>
         <Button
           variant="text"
-          sx={{ backgroundColor:"#253030", color: "White", fontFamily: "Poppins", marginLeft: "855px" }}
+          sx={{
+            backgroundColor: "#253030",
+            color: "White",
+            fontFamily: "Poppins",
+          }}
           onClick={contactHandler}
         >
           Contact

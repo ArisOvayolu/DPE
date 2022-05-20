@@ -8,8 +8,9 @@ import Facebook from "./Pages/Facebook";
 import Google from "./Pages/Google";
 import Amazon from "./Pages/Amazon";
 import About from "./About";
-import Alternative from "./AlternativeDesign";
+import Feedback from "./Feedback";
 import Footer from "./components/Footer";
+import Completed from "./completed";
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
           <Route path="/ExposeTheDarkPatterns/Google" element={<Google />} />
           <Route path="/ExposeTheDarkPatterns/Amazon" element={<Amazon />} />
           <Route path="/About" element = {<About/>} />
-          <Route path="/AlternativeDesign" element = {<Alternative/>} />
+          <Route path="/Feedback" element = {<Feedback/>} />
+          <Route path="/ExposeTheDarkPatterns/Completed" element = {<Completed/>} />
         </Routes>
       </BrowserRouter>
       <Footer/>
