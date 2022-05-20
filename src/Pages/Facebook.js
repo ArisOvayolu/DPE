@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Game from "./Game";
 import FBConfirmShaming from "../img/Facebook/confirmshaming.png";
 import FBMisdirection from "../img/Facebook/Misdirection.jpg";
+import Misdirection from "../img/Facebook/Misdirection.png"
+import NCCF from "../img/Facebook/NeedlessCandCS.jpg"
 import Badge from "@mui/material/Badge";
 import FBNC from "../img/Facebook/Misdirection and Needless Complexity.png";
 import SportsScoreIcon from "@mui/icons-material/SportsScore";
@@ -57,18 +59,22 @@ const Data = [
       "That was Misdirection paired with Confirm Shaming. Facebook purposefully makes the manage choices less appealing in order to distract the user from clicking it. Throughout the process of deciding the settings, they consistently use emotive language like 'protect' to sway the users decision."
   },
   {
-    img: FBNC,
-    option1: "Misdirection and Privacy Zuckering",
-    option2: "Hidden Costs and Misdirection",
-    option3: "Needless Complexity and Misdirection",
-    correctOption: "1",
+    img: Misdirection,
+    option1: "Privacy Zuckering",
+    option2: "Hidden Costs",
+    option3: "Misdirection",
+    correctOption: "3",
+    correctMess:
+      "That was Misdirection. Facebook purposefully add 'Ghost' stories on the avatars of the user's friends to make it seem like they have posted a story. When the user clicks on it Facebook reveals that the user's friend in fact hasn't posted anything for a while. "
   },
   {
-    img: FBNC,
+    img: NCCF,
     option1: "Misdirection and Privacy Zuckering",
-    option2: "Hidden Costs and Misdirection",
+    option2: "Needless Complexity and Confirm Shaming",
     option3: "Needless Complexity and Misdirection",
-    correctOption: "1",
+    correctOption: "2",
+    correctMess:
+      "Good Work, you've completed the quiz. That was Needless Complexity and Confirm Shaming. Facebook are attempting to sway their user's decision with the emotive language that nudges them to click on accept - rather than giving the user a simple yes or no option. They also fail to provide a close window functionality which is Needless Complexity."
   },
 ];
 

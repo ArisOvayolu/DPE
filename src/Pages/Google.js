@@ -47,7 +47,7 @@ const Data = [
     option3: "Needless Complexity",
     correctOption: "1",
     correctMess:
-      "That was Misdirection. Google have hid the X button that users would click on to close their advertisement whilst making the accept button very easy to see.",
+      "That was Misdirection. Google have hid the X button (It was disguised in the top right corner, meshed with the hair of the woman) that users would click on to close their advertisement whilst making the accept button very easy to see.",
   },
   {
     img: GglPrivacyZuckering,
