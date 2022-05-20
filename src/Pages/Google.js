@@ -124,11 +124,10 @@ const Google = () => {
           <Button onClick={handleClose}>Close Window</Button>
         </Paper>
       </Modal>
-
+      <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
       <h2
         style={{
           paddingTop: "25px",
-          marginLeft: "810px",
           fontFamily: "Poppins",
         }}
       >
@@ -138,7 +137,6 @@ const Google = () => {
       <p
         style={{
           paddingTop: "15px",
-          marginLeft: "610px",
           fontFamily: "Helvetica",
           fontSize: 20,
         }}
@@ -157,7 +155,6 @@ const Google = () => {
       <p
         style={{
           paddingTop: "20px",
-          marginLeft: "880px",
           fontFamily: "Poppins",
           fontSize: 21,
         }}
@@ -194,6 +191,7 @@ const Google = () => {
               <Game data={Data[score]} scoreSetter={scoreSetter} />
             </Grid>
           </Grid>
+          </Box>
         </>
       ) : (
         <>
