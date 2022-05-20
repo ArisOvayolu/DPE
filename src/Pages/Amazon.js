@@ -83,7 +83,6 @@ const normalise = (value) => ((value - 0) * 100) / (3 - 0);
 const Amazon = () => {
   const [score, setScore] = useState(0);
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
   const handleClose = () => {
     if (score === 5) {
       navigate("/ExposeTheDarkPatterns/Completed");

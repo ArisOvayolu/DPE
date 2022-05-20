@@ -60,6 +60,7 @@ const Feedback = () => {
         />
 
         <iframe
+        title="Feedback"
           src="https://docs.google.com/forms/d/e/1FAIpQLSfKoUuQ_DWVHpZ_R3b8lhKXTtAaAKtNlHf_nlp_OvpirVwpLg/viewform?embedded=true"
           width="640"
           height="843"
