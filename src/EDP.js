@@ -28,21 +28,20 @@ const EDP = () => {
       <Header />
 
       <h1
-        style={{ marginLeft: "735px", fontFamily: "Poppins", padding: "25px" }}
+        style={{  fontFamily: "Poppins", padding: "25px" }}
       >
         {" "}
         Expose The Dark Patterns{" "}
       </h1>
       <Divider />
       <h3
-        style={{ marginLeft: "850px", fontFamily: "Poppins", padding: "5px" }}
+        style={{ fontFamily: "Poppins", padding: "5px" }}
       >
         Test Your Knowledge
       </h3>
       <p
         style={{
           paddingTop: "40px",
-          marginLeft: "600px",
           fontFamily: "Helvetica",
           fontSize: 19,
         }}
@@ -53,7 +52,6 @@ const EDP = () => {
       <p
         style={{
           paddingTop: "10px",
-          marginLeft: "645px",
           fontFamily: "Helvetica",
           fontSize: 19,
         }}
@@ -78,7 +76,6 @@ const EDP = () => {
             backgroundColor: "white",
             borderRadius: "50px",
             padding: "10px",
-            marginLeft: "1495px",
             marginTop: "40px",
           }}
         >
@@ -104,7 +101,6 @@ const EDP = () => {
         <p
           style={{
             paddingTop: "20px",
-            marginLeft: "880px",
             fontFamily: "Helvetica",
             fontSize: 19,
           }}
