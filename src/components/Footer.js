@@ -5,19 +5,20 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        marginTop:'175px',
         backgroundColor: "#253030",
         padding: "10px",
         position:'relative',
         left: 0,
         bottom: 0,
         right: 0,
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
       }}
       component='footer'
     >
       <h4
         style={{
-          marginLeft: "830px",
           fontFamily: "Poppins",
           color: 'white'
         }}
