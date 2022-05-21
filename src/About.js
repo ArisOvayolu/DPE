@@ -106,7 +106,6 @@ const About = () => {
         </h3>
         <p
           style={{
-            padding: "2px",
             maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
@@ -126,7 +125,6 @@ const About = () => {
         </p>
         <p
           style={{
-            padding: "2px",
             maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
@@ -148,7 +146,6 @@ const About = () => {
         </p>
         <p
           style={{
-            padding: "2px",
             maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
@@ -174,7 +171,6 @@ const About = () => {
         </h1>
         <p
           style={{
-            padding: "2px",
             maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
@@ -187,7 +183,6 @@ const About = () => {
         </p>
         <p
           style={{
-            padding: "1px",
             maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,

@@ -214,7 +214,6 @@ const Landing = () => {
           </h2>
           <p
             style={{
-              padding: "10px",
               lineHeight: 1.5,
               paddingBottom: "20px",
               fontFamily: "Helvetica",
@@ -231,7 +230,6 @@ const Landing = () => {
           </p>
           <p
             style={{
-              padding: "10px",
               lineHeight: 1.5,
               paddingBottom: "30px",
               fontFamily: "Helvetica",
@@ -272,7 +270,6 @@ const Landing = () => {
         </h3>
         <p
           style={{
-            padding: "10px",
             paddingBottom: "20px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
@@ -299,7 +296,6 @@ const Landing = () => {
         </h3>
         <p
           style={{
-            padding: "10px",
             paddingBottom: "20px",
             fontFamily: "Helvetica",
             lineHeight: 1.5,
@@ -310,8 +306,8 @@ const Landing = () => {
           There are two dedicated pages that users can explore to better
           understand what dark patterns are, the “Dark Pattern Techniques” page,
           where you can find explanations on the different Dark Pattern
-          techniques that you may come across - and a simple interactive game
-          where users can test what theyve learnt (Expose the Dark Patterns).
+          techniques that you may come across, and a simple interactive game
+          where users can test what they've learnt (the "Expose the Dark Patterns" page).
         </p>
         <h3
           style={{
@@ -324,7 +320,6 @@ const Landing = () => {
         </h3>
         <p
           style={{
-            padding: "10px",
             paddingBottom: "20px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
@@ -354,8 +349,7 @@ const Landing = () => {
         </h2>
         <p
           style={{
-            padding: "10px",
-            paddingBottom: "20px",
+            paddingBottom: "30px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
             fontSize: 19,
