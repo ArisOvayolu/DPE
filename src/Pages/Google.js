@@ -14,7 +14,7 @@ import Divider from "@mui/material/Divider";
 import { useNavigate } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import { Paper } from "@mui/material";
+import { Paper,Box } from "@mui/material";
 import Button from "@mui/material/Button";
 
 const style = {
@@ -124,7 +124,8 @@ const Google = () => {
           <Button onClick={handleClose}>Close Window</Button>
         </Paper>
       </Modal>
-      <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+      <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', minWidth:'100%'}}>
+        <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center',minWidth:'100%', alignItems:'center'}}>
       <h2
         style={{
           paddingTop: "25px",
@@ -164,16 +165,9 @@ const Google = () => {
       <Divider sx={{ mb: "80px" }} />
       {score !== 5 ? (
         <>
-          <Grid container flexGrow={1} spacing={2}>
-            <Grid item xs={1} flexGrow={1}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  margin: "auto",
-                  justifyContent: "flex-end",
-                }}
-              >
+          <Grid container flexGrow={1} spacing={2} sx={{minHeight:'100%', minWidth:'100%'}}>
+            <Grid item xs={1}>
+              <Box sx={{display:'flex', flexDirection:'row', ml:'20px'}}>
                 <h3 style={{ fontFamily: "Poppins" }}>Score</h3>
                 <Badge
                   badgeContent={score}
@@ -185,18 +179,19 @@ const Google = () => {
                     sx={{ height: "75px", width: "75px" }}
                   />
                 </Badge>
-              </div>
+              </Box>
             </Grid>
-            <Grid item xs={10}>
+            <Grid item xs={11}>
               <Game data={Data[score]} scoreSetter={scoreSetter} />
             </Grid>
           </Grid>
-          </Box>
         </>
       ) : (
         <>
         </>
       )}
+      </Box>
+      </Box>
     </>
   );
 };
