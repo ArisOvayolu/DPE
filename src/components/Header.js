@@ -2,10 +2,13 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useLocation   } from "react-router-dom";
 
 const Header = () => {
   const Navigate = useNavigate();
+  const location = useLocation();
+  const pathname = location.pathname;
+  console.log('here is location --->', pathname)
   const DPTHandler = () => {
     Navigate("/DarkPatternTechniques");
   };
@@ -51,42 +54,42 @@ const Header = () => {
         </h1>
         <Stack  spacing={10} direction="row">
           <Button
-            sx={{ color: "white", fontFamily: "Poppins" }}
+            sx={{ color:pathname==='/'? 'yellow':"white", fontFamily: "Poppins" }}
             onClick={homeHandler}
           >
             home
           </Button>
           <Button
             variant="text"
-            sx={{ color: "white", fontFamily: "Poppins" }}
+            sx={{ color:pathname==='/About'? 'yellow':"white", fontFamily: "Poppins" }}
             onClick={aboutHandler}
           >
             About
           </Button>
           <Button
             variant="text"
-            sx={{ color: "white", fontFamily: "Poppins" }}
+            sx={{ color:pathname==='/DarkPatternTechniques'? 'yellow':"white", fontFamily: "Poppins" }}
             onClick={DPTHandler}
           >
             Dark Pattern Techniques
           </Button>
           <Button
             variant="text"
-            sx={{ color: "white", fontFamily: "Poppins" }}
+            sx={{ color:pathname==='/ExposeTheDarkPatterns'? 'yellow':"white", fontFamily: "Poppins" }}
             onClick={EDPHandler}
           >
             Expose The Dark Patterns
           </Button>
           <Button
             variant="text"
-            sx={{ color: "white", fontFamily: "Poppins" }}
+            sx={{ color:pathname==='/Feedback'? 'yellow':"white", fontFamily: "Poppins" }}
             onClick={feedbackHandler}
           >
             User Feedback
           </Button>
           <Button
             variant="text"
-            sx={{ color: "white", fontFamily: "Poppins" }}
+            sx={{ color: pathname==='/Contact'? 'yellow':"white", fontFamily: "Poppins" }}
             onClick={contactHandler}
           >
             Contact
