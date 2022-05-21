@@ -135,7 +135,7 @@ const Amazon = () => {
       >
         Amazons's Dark Patterns
       </h2>
-      <Divider light />
+      <Divider light sx={{minWidth:'100%'}} variant="fullWidth" />
       <p
         style={{
           paddingTop: "15px",
@@ -163,7 +163,7 @@ const Amazon = () => {
       >
         Good Luck!
       </p>
-      <Divider sx={{ mb: "80px" }} />
+      <Divider sx={{ mb: "80px", minWidth:'100%' }} variant="fullWidth"/>
       {score !== 5 ? (
         <>
           <Grid container flexSGrow={1} spacing={2}>

@@ -24,12 +24,11 @@ const DPT = () => {
     <>
       <StatusBar></StatusBar>
       <Header />
-      <Box sx={{ margin: "50px", backgroundColor: "#E1E8E8" }}>
+      <Box sx={{ margin: "10px",padding:'20px', backgroundColor: "#E1E8E8", display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center' }}>
         <h1
           style={{
             padding: "20px",
             paddingTop: "50px",
-            marginLeft: "700px",
             fontFamily: "Poppins",
           }}
         >
@@ -170,7 +169,7 @@ const DPT = () => {
 
         <Button
           variant="text"
-          sx={{ color: "White", fontFamily: "Poppins", marginLeft: "825px", backgroundColor: "#253030" }}
+          sx={{ color: "White", fontFamily: "Poppins",  backgroundColor: "#253030" }}
           onClick={EDPHandler}
         >
           Test Your Knowledge

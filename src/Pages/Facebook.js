@@ -134,7 +134,7 @@ const Facebook = () => {
       >
         Facebook's Dark Patterns
       </h2>
-      <Divider light />
+      <Divider light sx={{minWidth:'100%'}} variant="fullWidth"/>
       <p
         style={{
           paddingTop: "15px",
@@ -162,7 +162,7 @@ const Facebook = () => {
       >
         Good Luck!
       </p>
-      <Divider sx={{ mb: "80px" }} />
+      <Divider sx={{ mb: "80px", minWidth:'100%' }} variant="fullWidth"/>
       {score !== 5 ? (
         <>
           <Grid container flexGrow={1} spacing={2}sx={{minHeight:'100%', minWidth:'100%'}}>

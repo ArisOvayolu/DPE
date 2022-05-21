@@ -24,6 +24,7 @@ const EDP = () => {
   };
   return (
     <>
+    <Box sx={{display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center'}}>
       <Header />
 
       <h1
@@ -112,6 +113,7 @@ const EDP = () => {
             Choose Wisely!
           </span>
         </p>
+      </Box>
       </Box>
     </>
   );

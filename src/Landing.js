@@ -32,7 +32,7 @@ const Landing = () => {
         >
           What are Dark Patterns?
         </h1>
-        <Divider light sx={{ padding: "10px" }} />
+        <Divider light sx={{ padding: "10px", minWidth:'100%' }} variant="fullWidth" />
         <Grid
           container
           direction="row"
@@ -58,7 +58,7 @@ const Landing = () => {
                 >
                   Visual Representation of Dark Pattern Techniques
                 </Typography>
-                <Divider light sx={{ padding: "1px" }} />
+                <Divider light sx={{ padding: "1px", minWidth:'100%' }} variant="fullWidth" />
                 <Typography
                   gutterBottom
                   variant="body2"
@@ -150,7 +150,7 @@ const Landing = () => {
               average consumer. The infographic on the left highlights a number
               of these techniques.
             </p>
-            <Divider sx={{ padding: "10px" }} />
+            <Divider sx={{ padding: "10px", minWidth:'100%' }} variant="fullWidth"/>
           </Grid>
         </Grid>
         <Box sx={{display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center'}}>
@@ -199,7 +199,7 @@ const Landing = () => {
           regular basis.
         </p>
         </Box>
-        <Divider sx={{ padding: "10px" }} />
+        <Divider sx={{ padding: "10px", minWidth:'100%' }} variant="fullWidth" />
         <h2
           style={{
             paddingTop: "25px",
@@ -287,7 +287,7 @@ const Landing = () => {
           become a massive log of dark pattern techniques that
           applications/websites implement.
         </p>
-        <Divider sx={{ padding: "10px" }} />
+        <Divider sx={{ padding: "10px", minWidth:'100%' }} variant="fullWidth"/>
         <h2
           style={{
             paddingTop: "25px",

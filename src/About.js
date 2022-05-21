@@ -107,8 +107,7 @@ const About = () => {
         <p
           style={{
             padding: "2px",
-            paddingLeft: "435px",
-            paddingRight: "400px",
+            maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
@@ -128,8 +127,7 @@ const About = () => {
         <p
           style={{
             padding: "2px",
-            paddingLeft: "435px",
-            paddingRight: "400px",
+            maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
@@ -151,8 +149,7 @@ const About = () => {
         <p
           style={{
             padding: "2px",
-            paddingLeft: "435px",
-            paddingRight: "400px",
+            maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
@@ -178,8 +175,7 @@ const About = () => {
         <p
           style={{
             padding: "2px",
-            paddingLeft: "435px",
-            paddingRight: "400px",
+            maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
@@ -192,8 +188,7 @@ const About = () => {
         <p
           style={{
             padding: "1px",
-            paddingLeft: "435px",
-            paddingRight: "400px",
+            maxWidth: "1100px",
             paddingBottom: "30px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",

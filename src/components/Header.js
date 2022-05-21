@@ -29,14 +29,16 @@ const Header = () => {
       <Box
         sx={{
           margin: "auto",
-          paddingLeft: "800px",
           backgroundColor: "#253030",
           padding: "10px",
+          display:'flex',
+          justifyContent:'center',
+          alignItems:'center',
+          flexDirection:'column'
         }}
       >
         <h1
           style={{
-            marginLeft: "850px",
             backgroundColor: "#253030",
             borderRadius: "15px",
             maxWidth: "300px",
@@ -46,7 +48,7 @@ const Header = () => {
         >
           Dark Patterns Exposed
         </h1>
-        <Stack sx={{ marginLeft: "350px" }} spacing={10} direction="row">
+        <Stack  spacing={10} direction="row">
           <Button
             sx={{ color: "white", fontFamily: "Poppins" }}
             onClick={homeHandler}

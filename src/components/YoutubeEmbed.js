@@ -6,6 +6,7 @@ const YoutubeEmbed = ({ embedId }) => (
     style={{
       display: "flex",
       height:'650px',
+      width:'100%',
       padding:'10px',
     }}
   >
