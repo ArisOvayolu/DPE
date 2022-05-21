@@ -14,7 +14,7 @@ import Divider from "@mui/material/Divider";
 import { useNavigate } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import { Paper } from "@mui/material";
+import { Paper,Box } from "@mui/material";
 import Button from "@mui/material/Button";
 
 const style = {
@@ -124,11 +124,12 @@ const Amazon = () => {
           <Button onClick={handleClose}>Close Window</Button>
         </Paper>
       </Modal>
+    <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', minWidth:'100%'}}>
+    <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center',minWidth:'100%', alignItems:'center'}}>
 
       <h2
         style={{
           paddingTop: "25px",
-          marginLeft: "795px",
           fontFamily: "Poppins",
         }}
       >
@@ -138,7 +139,6 @@ const Amazon = () => {
       <p
         style={{
           paddingTop: "15px",
-          marginLeft: "620px",
           fontFamily: "Helvetica",
           fontSize: 20,
         }}
@@ -157,7 +157,6 @@ const Amazon = () => {
       <p
         style={{
           paddingTop: "20px",
-          marginLeft: "880px",
           fontFamily: "Poppins",
           fontSize: 21,
         }}
@@ -198,6 +197,8 @@ const Amazon = () => {
       ) : (
         <></>
       )}
+      </Box>
+      </Box>
     </>
   );
 };

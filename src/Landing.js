@@ -22,12 +22,11 @@ const Landing = () => {
     <>
       <StatusBar></StatusBar>
       <Header />
-      <Box sx={{ margin: "50px", backgroundColor: "#E1E8E8" }}>
+      <Box sx={{ margin: "50px", backgroundColor: "#E1E8E8", display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center', padding:'20px' }}>
         <h1
           style={{
             paddingTop: "45px",
             paddingBottom: "25px",
-            marginLeft: "700px",
             fontFamily: "Poppins",
           }}
         >
@@ -55,7 +54,7 @@ const Landing = () => {
                   gutterBottom
                   variant="h6"
                   component="div"
-                  style={{ marginLeft: "45px" }}
+                  style={{  }}
                 >
                   Visual Representation of Dark Pattern Techniques
                 </Typography>
@@ -64,19 +63,19 @@ const Landing = () => {
                   gutterBottom
                   variant="body2"
                   component="div"
-                  style={{ marginLeft: "65px" }}
+                  style={{  }}
                 >
                   Ref: https://uxknowledgebase.com/dark-patterns-3b41ed7a690e
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={5}>
+          <Grid item xs={5} sx={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
+            <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
             <h3
               style={{
                 paddingTop: "25px",
                 paddingBottom: "10px",
-                marginLeft: "300px",
                 fontFamily: "Poppins",
                 fontSize: 21,
               }}
@@ -84,6 +83,7 @@ const Landing = () => {
               {" "}
               Dark Patterns{" "}
             </h3>
+            </Box>
             <p
               style={{
                 fontFamily: "Helvetica",
@@ -105,7 +105,6 @@ const Landing = () => {
             <h3
               style={{
                 paddingBottom: "10px",
-                marginLeft: "320px",
                 fontFamily: "Poppins",
                 fontSize: 20,
               }}
@@ -132,7 +131,6 @@ const Landing = () => {
             <h3
               style={{
                 paddingBottom: "10px",
-                marginLeft: "320px",
                 fontFamily: "Poppins",
                 fontSize: 21,
               }}
@@ -155,10 +153,10 @@ const Landing = () => {
             <Divider sx={{ padding: "10px" }} />
           </Grid>
         </Grid>
+        <Box sx={{display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center'}}>
         <h2
           style={{
             paddingTop: "40px",
-            marginLeft: "825px",
             fontFamily: "Poppins",
             paddingBottom: "20px",
           }}
@@ -169,12 +167,11 @@ const Landing = () => {
         <p
           style={{
             padding: "10px",
-            paddingLeft: "400px",
-            paddingRight: "400px",
             lineHeight: 1.5,
             paddingBottom: "20px",
             fontFamily: "Helvetica",
             fontSize: 19,
+            maxWidth:'1200px'
           }}
         >
           If it’s not illegal, some may ask, what is the problem with this?
@@ -187,12 +184,11 @@ const Landing = () => {
         <p
           style={{
             padding: "10px",
-            paddingLeft: "400px",
-            paddingRight: "400px",
             lineHeight: 1.5,
             paddingBottom: "30px",
             fontFamily: "Helvetica",
             fontSize: 19,
+            maxWidth:'1200px'
           }}
         >
           UX/UI designers should always prioritize the needs of the consumer and
@@ -202,12 +198,12 @@ const Landing = () => {
           unknowingly being exploited, for profit, by these corporations on a
           regular basis.
         </p>
+        </Box>
         <Divider sx={{ padding: "10px" }} />
         <h2
           style={{
             paddingTop: "25px",
             paddingBottom: "30px",
-            marginLeft: "715px",
             fontFamily: "Poppins",
           }}
         >
@@ -217,7 +213,6 @@ const Landing = () => {
         <h3
           style={{
             paddingBottom: "10px",
-            marginLeft: "790px",
             fontFamily: "Poppins",
             fontSize: 21,
           }}
@@ -227,12 +222,11 @@ const Landing = () => {
         <p
           style={{
             padding: "10px",
-            paddingLeft: "400px",
-            paddingRight: "400px",
             paddingBottom: "20px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
             fontSize: 19,
+            maxWidth:'1200px'
           }}
         >
           So, the question remains, how can we avoid being exploited by these
@@ -246,7 +240,6 @@ const Landing = () => {
         <h3
           style={{
             paddingBottom: "10px",
-            marginLeft: "860px",
             fontFamily: "Poppins",
             fontSize: 21,
           }}
@@ -256,12 +249,11 @@ const Landing = () => {
         <p
           style={{
             padding: "10px",
-            paddingLeft: "400px",
-            paddingRight: "400px",
             paddingBottom: "20px",
             fontFamily: "Helvetica",
             lineHeight: 1.5,
             fontSize: 19,
+            maxWidth:'1200px'
           }}
         >
           There are two dedicated pages that users can explore to better
@@ -273,7 +265,6 @@ const Landing = () => {
         <h3
           style={{
             paddingBottom: "10px",
-            marginLeft: "820px",
             fontFamily: "Poppins",
             fontSize: 21,
           }}
@@ -283,12 +274,11 @@ const Landing = () => {
         <p
           style={{
             padding: "10px",
-            paddingLeft: "400px",
-            paddingRight: "400px",
             paddingBottom: "20px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
             fontSize: 19,
+            maxWidth:'1200px'
           }}
         >
           We have plans to extend the website further by adding further features
@@ -302,7 +292,6 @@ const Landing = () => {
           style={{
             paddingTop: "25px",
             paddingBottom: "10px",
-            marginLeft: "860px",
             fontFamily: "Poppins",
           }}
         >
@@ -312,12 +301,11 @@ const Landing = () => {
         <p
           style={{
             padding: "10px",
-            paddingLeft: "570px",
-            paddingRight: "400px",
             paddingBottom: "20px",
             lineHeight: 1.5,
             fontFamily: "Helvetica",
             fontSize: 19,
+            maxWidth:'1200px'
           }}
         >
           <span style={{color: "black", fontSize:21, fontFamily:"Poppins"}}>Piqued your interest?</span> Let's have a more in depth look at the different
@@ -329,7 +317,6 @@ const Landing = () => {
             backgroundColor: "#253030",
             color: "White",
             fontFamily: "Poppins",
-            marginLeft: "795px",
           }}
           onClick={DPTHandler}
         >
