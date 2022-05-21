@@ -24,92 +24,96 @@ const EDP = () => {
   };
   return (
     <>
-    <Box sx={{display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center'}}>
       <Header />
-
-      <h1
-        style={{  fontFamily: "Poppins", padding: "25px" }}
-      >
-        {" "}
-        Expose The Dark Patterns{" "}
-      </h1>
-      <Divider />
-      <h3
-        style={{ fontFamily: "Poppins", padding: "5px" }}
-      >
-        Test Your Knowledge
-      </h3>
-      <p
-        style={{
-          paddingTop: "40px",
-          fontFamily: "Helvetica",
-          fontSize: 19,
-        }}
-      >
-        Now that we've learnt a bit more about dark patterns, its time to test
-        our knowledge!
-      </p>
-      <p
-        style={{
-          paddingTop: "10px",
-          fontFamily: "Helvetica",
-          fontSize: 19,
-        }}
-      >
-        Before you are three
-        <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
-          {" "}
-          infamous wielders
-        </span>{" "}
-        of dark patterns to pick from.
-      </p>
-      <div
-        style={{
-          width: "425px",
+      <Box
+        sx={{
           display: "flex",
           justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        <Paper
-          elevation={24}
-          sx={{
-            backgroundColor: "white",
-            borderRadius: "50px",
-            padding: "10px",
-            marginTop: "40px",
-          }}
-        >
-          <Stack
-            direction="row"
-            spacing={10}
-            sx={{ margin: "auto", justifySelf: "center" }}
-          >
-            {avData.map((a) => {
-              return (
-                <Avatar
-                  alt={a.alt}
-                  src={a.img}
-                  sx={{ width: 90, height: 90 }}
-                  onClick={() => onClickHandler(a.route)}
-                />
-              );
-            })}
-          </Stack>
-        </Paper>
-      </div>
-      <Box sx={{ paddingTop: "30px" }}>
+        <h1 style={{ fontFamily: "Poppins", padding: "25px" }}>
+          {" "}
+          Expose The Dark Patterns{" "}
+        </h1>
+        <Divider sx={{ minWidth: "100%" }} variant="fullWidth" />
+        <h3 style={{ fontFamily: "Poppins", padding: "5px" }}>
+          Test Your Knowledge
+        </h3>
         <p
           style={{
-            paddingTop: "20px",
+            paddingTop: "40px",
             fontFamily: "Helvetica",
             fontSize: 19,
           }}
         >
-          <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
-            Choose Wisely!
-          </span>
+          Now that we've learnt a bit more about dark patterns, its time to test
+          our knowledge!
         </p>
-      </Box>
+        <p
+          style={{
+            paddingTop: "10px",
+            fontFamily: "Helvetica",
+            fontSize: 19,
+          }}
+        >
+          Before you are three
+          <span style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}>
+            {" "}
+            infamous wielders
+          </span>{" "}
+          of dark patterns to pick from.
+        </p>
+        <div
+          style={{
+            width: "425px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Paper
+            elevation={24}
+            sx={{
+              backgroundColor: "white",
+              borderRadius: "50px",
+              padding: "10px",
+              marginTop: "40px",
+            }}
+          >
+            <Stack
+              direction="row"
+              spacing={10}
+              sx={{ margin: "auto", justifySelf: "center" }}
+            >
+              {avData.map((a) => {
+                return (
+                  <Avatar
+                    alt={a.alt}
+                    src={a.img}
+                    sx={{ width: 90, height: 90 }}
+                    onClick={() => onClickHandler(a.route)}
+                  />
+                );
+              })}
+            </Stack>
+          </Paper>
+        </div>
+        <Box sx={{ paddingTop: "30px" }}>
+          <p
+            style={{
+              paddingTop: "20px",
+              fontFamily: "Helvetica",
+              fontSize: 19,
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}
+            >
+              Choose Wisely!
+            </span>
+          </p>
+        </Box>
       </Box>
     </>
   );

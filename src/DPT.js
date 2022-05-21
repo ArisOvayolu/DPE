@@ -24,7 +24,17 @@ const DPT = () => {
     <>
       <StatusBar></StatusBar>
       <Header />
-      <Box sx={{ margin: "10px",padding:'20px', backgroundColor: "#E1E8E8", display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center' }}>
+      <Box
+        sx={{
+          margin: "5px",
+          padding: "20px",
+          backgroundColor: "#E1E8E8",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <h1
           style={{
             padding: "20px",
@@ -35,7 +45,11 @@ const DPT = () => {
           {" "}
           Dark Pattern Techniques{" "}
         </h1>
-        <Divider light sx={{ padding: "10px" }} />
+        <Divider
+          light
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
         <Box
           sx={{
             paddingTop: "30px",
@@ -58,7 +72,7 @@ const DPT = () => {
           </h2>
         </Box>
         <YoutubeEmbed embedId="-xK02zueCuY" />
-        <Divider light />
+        <Divider light sx={{ minWidth: "100%" }} variant="fullWidth" />
 
         <Box
           sx={{
@@ -76,7 +90,11 @@ const DPT = () => {
           </h2>
         </Box>
         <YoutubeEmbed embedId="D2lOt-kpXP4" />
-        <Divider light sx={{ padding: "10px" }} />
+        <Divider
+          light
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
 
         <Box
           sx={{
@@ -94,7 +112,11 @@ const DPT = () => {
           </h2>
         </Box>
         <YoutubeEmbed embedId="6ZfhMkd07GU" />
-        <Divider light sx={{ padding: "10px" }} />
+        <Divider
+          light
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
 
         <Box
           sx={{
@@ -112,7 +134,11 @@ const DPT = () => {
           </h2>
         </Box>
         <YoutubeEmbed embedId="rPvrPuthUi0" />
-        <Divider light sx={{ padding: "10px" }} />
+        <Divider
+          light
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
 
         <Box
           sx={{
@@ -130,7 +156,11 @@ const DPT = () => {
           </h2>
         </Box>
         <YoutubeEmbed embedId="KQHST_gYkzc" />
-        <Divider light sx={{ padding: "10px" }} />
+        <Divider
+          light
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
 
         <Box
           sx={{
@@ -148,7 +178,11 @@ const DPT = () => {
           </h2>
         </Box>
         <YoutubeEmbed embedId="-wVWqzbcmcE" />
-        <Divider light sx={{ padding: "10px" }} />
+        <Divider
+          light
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
 
         <Box
           sx={{
@@ -169,7 +203,11 @@ const DPT = () => {
 
         <Button
           variant="text"
-          sx={{ color: "White", fontFamily: "Poppins",  backgroundColor: "#253030" }}
+          sx={{
+            color: "White",
+            fontFamily: "Poppins",
+            backgroundColor: "#253030",
+          }}
           onClick={EDPHandler}
         >
           Test Your Knowledge

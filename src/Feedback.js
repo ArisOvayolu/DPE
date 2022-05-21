@@ -12,7 +12,7 @@ const Feedback = () => {
 
       <Box
         sx={{
-          margin: "40px",
+          margin: "5px",
           backgroundColor: "#E1E8E8",
           display: "flex",
           justifyContent: "center",

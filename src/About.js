@@ -26,7 +26,7 @@ const About = () => {
       <Header />
       <Box
         sx={{
-          margin: "50px",
+          margin: "5px",
           backgroundColor: "#E1E8E8",
           display: "flex",
           flexDirection: "column",
@@ -45,7 +45,7 @@ const About = () => {
           {" "}
           About{" "}
         </h1>
-        <Divider light sx={{minWidth:'100%'}} variant="fullWidth" />
+        <Divider light sx={{ minWidth: "100%" }} variant="fullWidth" />
         <Grid
           container
           justifyContent="center"
@@ -156,12 +156,12 @@ const About = () => {
             fontSize: 19,
           }}
         >
-          I am strongly against tis approach to designing and created this
+          I am strongly against this approach to designing and created this
           website to raise awareness of dark pattern implementation - the
           ultimate aim of this website is to educate the average web user of
           these deceptive design techniques.
         </p>
-        <Divider light sx={{minWidth:'100%'}} variant="fullWidth" />
+        <Divider light sx={{ minWidth: "100%" }} variant="fullWidth" />
         <h1
           style={{
             paddingTop: "25px",

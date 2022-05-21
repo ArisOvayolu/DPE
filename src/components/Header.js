@@ -42,6 +42,7 @@ const Header = () => {
             backgroundColor: "#253030",
             borderRadius: "15px",
             maxWidth: "300px",
+            paddingLeft:"100px",
             fontFamily: "Poppins",
             color: "white",
           }}

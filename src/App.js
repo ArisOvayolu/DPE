@@ -18,7 +18,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/" index element={<Landing />} />
           <Route path="/DarkPatternTechniques" element={<DPT />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/ExposeTheDarkPatterns" element={<EDP />} />
@@ -28,6 +28,7 @@ function App() {
           <Route path="/About" element = {<About/>} />
           <Route path="/Feedback" element = {<Feedback/>} />
           <Route path="/ExposeTheDarkPatterns/Completed" element = {<Completed/>} />
+          <Route path='*' element={<Landing/>}/>
         </Routes>
       </BrowserRouter>
       <Footer/>

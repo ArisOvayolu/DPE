@@ -22,7 +22,17 @@ const Landing = () => {
     <>
       <StatusBar></StatusBar>
       <Header />
-      <Box sx={{ margin: "50px", backgroundColor: "#E1E8E8", display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center', padding:'20px' }}>
+      <Box
+        sx={{
+          margin: "5px",
+          backgroundColor: "#E1E8E8",
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+          padding: "20px",
+        }}
+      >
         <h1
           style={{
             paddingTop: "45px",
@@ -32,7 +42,11 @@ const Landing = () => {
         >
           What are Dark Patterns?
         </h1>
-        <Divider light sx={{ padding: "10px", minWidth:'100%' }} variant="fullWidth" />
+        <Divider
+          light
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
         <Grid
           container
           direction="row"
@@ -54,35 +68,54 @@ const Landing = () => {
                   gutterBottom
                   variant="h6"
                   component="div"
-                  style={{  }}
+                  style={{}}
                 >
                   Visual Representation of Dark Pattern Techniques
                 </Typography>
-                <Divider light sx={{ padding: "1px", minWidth:'100%' }} variant="fullWidth" />
+                <Divider
+                  light
+                  sx={{ padding: "1px", minWidth: "100%" }}
+                  variant="fullWidth"
+                />
                 <Typography
                   gutterBottom
                   variant="body2"
                   component="div"
-                  style={{  }}
+                  style={{}}
                 >
                   Ref: https://uxknowledgebase.com/dark-patterns-3b41ed7a690e
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={5} sx={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
-            <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-            <h3
-              style={{
-                paddingTop: "25px",
-                paddingBottom: "10px",
-                fontFamily: "Poppins",
-                fontSize: 21,
+          <Grid
+            item
+            xs={5}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
-              {" "}
-              Dark Patterns{" "}
-            </h3>
+              <h3
+                style={{
+                  paddingTop: "25px",
+                  paddingBottom: "10px",
+                  fontFamily: "Poppins",
+                  fontSize: 21,
+                }}
+              >
+                {" "}
+                Dark Patterns{" "}
+              </h3>
             </Box>
             <p
               style={{
@@ -92,8 +125,13 @@ const Landing = () => {
                 lineHeight: 1.5,
               }}
             >
-              What are dark patterns, and why is this website <span style={{color: "black", fontSize:19, fontFamily:"Poppins"}}>“exposing”</span> them? 
-              Dark Patterns are deceptive design techniques implemented by
+              What are dark patterns, and why is this website{" "}
+              <span
+                style={{ color: "black", fontSize: 19, fontFamily: "Poppins" }}
+              >
+                “exposing”
+              </span>{" "}
+              them? Dark Patterns are deceptive design techniques implemented by
               applications/websites to coerce the consumer to do something that
               they may not have necessarily been wanting to do - all for the
               gain of the service provider. Ever felt that the application that
@@ -150,56 +188,69 @@ const Landing = () => {
               average consumer. The infographic on the left highlights a number
               of these techniques.
             </p>
-            <Divider sx={{ padding: "10px", minWidth:'100%' }} variant="fullWidth"/>
+            <Divider
+              sx={{ padding: "10px", minWidth: "100%" }}
+              variant="fullWidth"
+            />
           </Grid>
         </Grid>
-        <Box sx={{display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center'}}>
-        <h2
-          style={{
-            paddingTop: "40px",
-            fontFamily: "Poppins",
-            paddingBottom: "20px",
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
-          {" "}
-          The Problem{" "}
-        </h2>
-        <p
-          style={{
-            padding: "10px",
-            lineHeight: 1.5,
-            paddingBottom: "20px",
-            fontFamily: "Helvetica",
-            fontSize: 19,
-            maxWidth:'1200px'
-          }}
-        >
-          If it’s not illegal, some may ask, what is the problem with this?
-          Well, like many other aspects of the computing industry, the law isn’t
-          always the most consistent indicator for what is right and wrong.
-          Abusing the consumers trust by providing a service that undermines the
-          value of honesty (which is what most dark pattern techniques
-          ultimately do) is highly unethical and wrong.
-        </p>
-        <p
-          style={{
-            padding: "10px",
-            lineHeight: 1.5,
-            paddingBottom: "30px",
-            fontFamily: "Helvetica",
-            fontSize: 19,
-            maxWidth:'1200px'
-          }}
-        >
-          UX/UI designers should always prioritize the needs of the consumer and
-          create interfaces that provide a smooth and efficient user experience.
-          Raising awareness about these deceptive design tactics is very
-          important, as people have the right to be aware of how they are
-          unknowingly being exploited, for profit, by these corporations on a
-          regular basis.
-        </p>
+          <h2
+            style={{
+              paddingTop: "40px",
+              fontFamily: "Poppins",
+              paddingBottom: "20px",
+            }}
+          >
+            {" "}
+            The Problem{" "}
+          </h2>
+          <p
+            style={{
+              padding: "10px",
+              lineHeight: 1.5,
+              paddingBottom: "20px",
+              fontFamily: "Helvetica",
+              fontSize: 19,
+              maxWidth: "1200px",
+            }}
+          >
+            If it’s not illegal, some may ask, what is the problem with this?
+            Well, like many other aspects of the computing industry, the law
+            isn’t always the most consistent indicator for what is right and
+            wrong. Abusing the consumers trust by providing a service that
+            undermines the value of honesty (which is what most dark pattern
+            techniques ultimately do) is highly unethical and wrong.
+          </p>
+          <p
+            style={{
+              padding: "10px",
+              lineHeight: 1.5,
+              paddingBottom: "30px",
+              fontFamily: "Helvetica",
+              fontSize: 19,
+              maxWidth: "1200px",
+            }}
+          >
+            UX/UI designers should always prioritize the needs of the consumer
+            and create interfaces that provide a smooth and efficient user
+            experience. Raising awareness about these deceptive design tactics
+            is very important, as people have the right to be aware of how they
+            are unknowingly being exploited, for profit, by these corporations
+            on a regular basis.
+          </p>
         </Box>
-        <Divider sx={{ padding: "10px", minWidth:'100%' }} variant="fullWidth" />
+        <Divider
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
         <h2
           style={{
             paddingTop: "25px",
@@ -226,7 +277,7 @@ const Landing = () => {
             lineHeight: 1.5,
             fontFamily: "Helvetica",
             fontSize: 19,
-            maxWidth:'1200px'
+            maxWidth: "1200px",
           }}
         >
           So, the question remains, how can we avoid being exploited by these
@@ -253,7 +304,7 @@ const Landing = () => {
             fontFamily: "Helvetica",
             lineHeight: 1.5,
             fontSize: 19,
-            maxWidth:'1200px'
+            maxWidth: "1200px",
           }}
         >
           There are two dedicated pages that users can explore to better
@@ -278,7 +329,7 @@ const Landing = () => {
             lineHeight: 1.5,
             fontFamily: "Helvetica",
             fontSize: 19,
-            maxWidth:'1200px'
+            maxWidth: "1200px",
           }}
         >
           We have plans to extend the website further by adding further features
@@ -287,7 +338,10 @@ const Landing = () => {
           become a massive log of dark pattern techniques that
           applications/websites implement.
         </p>
-        <Divider sx={{ padding: "10px", minWidth:'100%' }} variant="fullWidth"/>
+        <Divider
+          sx={{ padding: "10px", minWidth: "100%" }}
+          variant="fullWidth"
+        />
         <h2
           style={{
             paddingTop: "25px",
@@ -305,11 +359,13 @@ const Landing = () => {
             lineHeight: 1.5,
             fontFamily: "Helvetica",
             fontSize: 19,
-            maxWidth:'1200px'
+            maxWidth: "1200px",
           }}
         >
-          <span style={{color: "black", fontSize:21, fontFamily:"Poppins"}}>Piqued your interest?</span> Let's have a more in depth look at the different
-          techniques.
+          <span style={{ color: "black", fontSize: 21, fontFamily: "Poppins" }}>
+            Piqued your interest?
+          </span>{" "}
+          Let's have a more in depth look at the different techniques.
         </p>
         <Button
           variant="text"
