@@ -269,6 +269,27 @@ const DPT = () => {
             Needless Complexity / "Roach Motel"{" "}
           </h2>
         </Box>
+        <Box
+          sx={{
+            paddingBottom: "15px",
+            flexDirection: "column",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+        <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            </p>  
+        </Box>
         <YoutubeEmbed embedId="D2lOt-kpXP4" />
         <Divider
           light
