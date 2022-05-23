@@ -11,9 +11,14 @@ import NC from "./img/DPT/NeedlessComplexity.jpg";
 import DA from "./img/DPT/DisguisedAds.jpg";
 import SB from "./img/DPT/SneakintoBasket.jpg";
 import CS from "./img/DPT/ConfirmShaming.jpg";
+import HCE from "./img/DPT/Hidden Costs.jpg";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import { useNavigate } from "react-router-dom";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
 
 const DPT = () => {
   const Navigate = useNavigate();
@@ -70,6 +75,181 @@ const DPT = () => {
             {" "}
             Hidden Cost{" "}
           </h2>
+        </Box>
+        <Box
+          sx={{
+            paddingBottom: "15px",
+            flexDirection: "column",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}
+            >
+              Hidden costs
+            </span>{" "}
+            appear at the final checkout page, unexpectedly, with no prior
+            mention in any other part of the UI/UX. They are in the final
+            checkout stage as the application/website wants the user to go
+            through all the stages of online shopping before they eventually
+            come across the hidden fees.{" "}
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            This makes the user less likely to notice the fees (as they’re not
+            highlighted in the user’s face; they’re rather more sneakily
+            implemented) and even if they do notice, the user is so far
+            committed, they’re far more likely to just go ahead and purchase,
+            regardless of the extra fees.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Example
+          </h3>
+          <Card sx={{ padding: "20px", marginBottom: "20px" }}>
+            <CardMedia
+              component="img"
+              height="450"
+              width="600"
+              image={HCE}
+              alt="info"
+            />
+            <CardContent>
+              <Divider
+                light
+                sx={{ padding: "1px", minWidth: "100%" }}
+                variant="fullWidth"
+              />
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                style={{ marginLeft: "190px" }}
+              >
+                Ref: https://measuringu.com/flower-ux/
+              </Typography>
+            </CardContent>
+          </Card>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            As you can see from the image above, the hidden costs are only
+            revealed to the user in the final checkout section of this UX.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Another common implementation of hidden costs is pairing them with
+            supposed “free” items or bargain deals that seem to be a steal for
+            the user. These items are only free or a bargain, till the user gets
+            to the checkout page where they come across the hidden costs and
+            come to the realization that maybe they might have been duped.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            How to avoid Hidden Costs
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Always be aware that there may be hidden costs in the checkout
+            section when you are doing some online shopping, so don’t get too
+            attached to the items in your basket!
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If we want to see a change and prevent the implementation of this
+            technique, we need to stop purchasing items from
+            website/applications that implement this technique.{" "}
+            <span
+              style={{ color: "black", fontSize: 18, fontFamily: "Poppins" }}
+            >
+              DO NOT ENTERTAIN THEIR MANIPULATION!
+            </span>
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Golden rule of the internet; if it looks too good to be true, it
+            probably is. Be vigilant online, if a website is offering you a
+            bargain that’s too good to be true, chances are there are some
+            hidden costs involved.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Check out this video!
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If reading all of that isn't for you, check out this short video I
+            made summarising this technique!
+          </p>
         </Box>
         <YoutubeEmbed embedId="-xK02zueCuY" />
         <Divider light sx={{ minWidth: "100%" }} variant="fullWidth" />

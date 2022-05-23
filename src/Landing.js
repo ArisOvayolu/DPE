@@ -68,7 +68,7 @@ const Landing = () => {
                   gutterBottom
                   variant="h6"
                   component="div"
-                  style={{}}
+                  style={{marginLeft: "105px"}}
                 >
                   Visual Representation of Dark Pattern Techniques
                 </Typography>
@@ -81,7 +81,7 @@ const Landing = () => {
                   gutterBottom
                   variant="body2"
                   component="div"
-                  style={{}}
+                  style={{marginLeft: "122px"}}
                 >
                   Ref: https://uxknowledgebase.com/dark-patterns-3b41ed7a690e
                 </Typography>
