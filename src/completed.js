@@ -112,7 +112,7 @@ const Completed = () => {
         </Button>
         <p
           style={{
-            fontFamily: "Helvetica",
+            fontFamily: "Poppins",
             paddingTop: "30px",
             fontSize: 19,
           }}
