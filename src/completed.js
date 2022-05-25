@@ -20,8 +20,7 @@ const Completed = () => {
       <Header />
       <Box
         sx={{
-          margin: "5px",
-          backgroundColor: "#E1E8E8",
+          backgroundColor: "white",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",

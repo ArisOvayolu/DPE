@@ -12,7 +12,6 @@ const Contact = () => {
       <Header />
       <Box
         sx={{
-          margin: "5px",
           backgroundColor: "white",
           display: "flex",
           flexDirection: "column",
