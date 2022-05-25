@@ -57,7 +57,7 @@ const Completed = () => {
         />
         <p
           style={{
-            fontFamily: "Helvetica",
+            fontFamily: "Poppins",
             fontSize: 19,
             paddingBottom:"20px"
           }}
