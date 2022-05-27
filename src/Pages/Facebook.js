@@ -78,7 +78,7 @@ const Data = [
   },
 ];
 
-const normalise = (value) => ((value - 0) * 100) / (3 - 0);
+const normalise = (value) => ((value - 0) * 100) / (5 - 0);
 
 const Facebook = () => {
   const [score, setScore] = useState(0);
