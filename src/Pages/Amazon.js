@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
-import Game from "./Game";
+import Game from "../components/Game";
 import AMHiddenCosts from "../img/Amazon/hidden costs.jpg";
 import SneakintoBasket from "../img/Amazon/Sneak into basket.jpg";
 import AMMisdirection from "../img/Amazon/Amazon Misdirection.png";

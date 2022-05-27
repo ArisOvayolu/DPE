@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
-import Game from "./Game";
+import Game from "../components/Game";
 import DisguisedAds from "../img/Google/Disguised ads.jpg";
 import GglMisdirection from "../img/Google/Misdirection.jpg";
 import GglPrivacyZuckering from "../img/Google/PrivacyZuckering.png";

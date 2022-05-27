@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
-import Game from "./Game";
+import Game from "../components/Game";
 import FBConfirmShaming from "../img/Facebook/confirmshaming.png";
 import FBMisdirection from "../img/Facebook/Misdirection.jpg";
 import Misdirection from "../img/Facebook/Misdirection.png"
