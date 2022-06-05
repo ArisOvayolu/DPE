@@ -5,6 +5,8 @@ import YoutubeEmbed from "./components/YoutubeEmbed";
 import StatusBar from "./components/StatusBar";
 import Avatar from "@mui/material/Avatar";
 import HC from "./img/DPT/HiddenCosts.jpg";
+import NC1 from "./img/DPT/NC1.png";
+import NC2 from "./img/DPT/NC2.png";
 import MD from "./img/DPT/Misdirection.jpg";
 import PZ from "./img/DPT/PrivacyZuckering.jpg";
 import NC from "./img/DPT/NeedlessComplexity.jpg";
@@ -252,7 +254,11 @@ const DPT = () => {
           </p>
         </Box>
         <YoutubeEmbed embedId="-xK02zueCuY" />
-        <Divider light sx={{ minWidth: "100%" }} variant="fullWidth" />
+        <Divider
+          light
+          sx={{ minWidth: "100%", mb: "30px" }}
+          variant="fullWidth"
+        />
 
         <Box
           sx={{
@@ -279,7 +285,7 @@ const DPT = () => {
             alignContent: "center",
           }}
         >
-        <p
+          <p
             style={{
               paddingBottom: "0px",
               lineHeight: 1.5,
@@ -288,7 +294,107 @@ const DPT = () => {
               maxWidth: "835px",
             }}
           >
-            </p>  
+            <span
+              style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}
+            >
+              Needless complexity or “roach motel”
+            </span>{" "}
+            is the technique of creating a design that is very easy for the user
+            to sign up to/enter, but difficult to exit. Most commonly applied by
+            applications/websites that offer subscription services – the
+            application intentionally designs their subscription cancelling
+            process, for example, to be so complex, a portion of users would
+            simply give up as they struggle to navigate the user interface.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            This practice is surprisingly common, think of personal experiences;
+            the signing up process is always the easier process when compared to
+            cancelling an account or subscription.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            For the service provider, the benefits are clear, they make more
+            revenue as people are less likely to persist with trying to cancel
+            their account or subscription. Their objectives are clear,
+            prioritise revenue over user experience.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Example
+          </h3>
+          <Card sx={{ padding: "20px", marginBottom: "20px" }}>
+            <CardMedia
+              component="img"
+              height="600"
+              width="750"
+              image={NC1}
+              alt="info"
+            />
+            <CardContent>
+              <Divider
+                light
+                sx={{ padding: "1px", minWidth: "100%" }}
+                variant="fullWidth"
+              />
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                style={{ marginLeft: "175px" }}
+              >
+                Ref: https://www.deceptive.design/types/roach-motel
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card sx={{ padding: "20px", marginBottom: "20px", mt:"30px" }}>
+            <CardMedia
+              component="img"
+              height="400"
+              width="550"
+              image={NC2}
+              alt="info"
+            />
+            <CardContent>
+              <Divider
+                light
+                sx={{ padding: "1px", minWidth: "100%" }}
+                variant="fullWidth"
+              />
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                style={{ marginLeft: "175px" }}
+              >
+                Ref: https://www.deceptive.design/types/roach-motel
+              </Typography>
+            </CardContent>
+          </Card>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            How to avoid Needless Complexity/Roach Motel
+          </h3>
         </Box>
         <YoutubeEmbed embedId="D2lOt-kpXP4" />
         <Divider
