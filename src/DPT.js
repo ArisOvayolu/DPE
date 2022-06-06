@@ -364,7 +364,7 @@ const DPT = () => {
               </Typography>
             </CardContent>
           </Card>
-          <Card sx={{ padding: "20px", marginBottom: "20px", mt:"30px" }}>
+          <Card sx={{ padding: "20px", marginBottom: "20px", mt: "30px" }}>
             <CardMedia
               component="img"
               height="400"
@@ -388,13 +388,95 @@ const DPT = () => {
               </Typography>
             </CardContent>
           </Card>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            The images above highlight how this technique may be used. Rolling
+            Stones deceptively lure their users into signing up to their
+            subscription, unless they notice the decline button highlighted in
+            the first picture (Misdirection...).
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            The only way users, that notice later on that they've subscribed,
+            can unsubscribe is to download a form, print it out fill it in with
+            a pen, put it in an envelope with a stamp and sent it to them via
+            mail.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+              mt: "10px",
+            }}
+          >
+            How to avoid Needless Complexity/Roach Motel
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If it’s an unknown service, you can use free online tools like
+            “TrustPilot” to see what other people are saying about the service.
+            If there are many negative reviews describing functionality that is
+            similar to this dark pattern, chances are you should stay away from
+            that service.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Don’t just sign up for anything! <span
+              style={{ color: "black", fontSize: 18, fontFamily: "Poppins" }}
+            >
+            Be vigilant online.
+            </span>{" "}
+            Be sure to check the service’s stated conditions before
+            subscribing/signing up! If you see any inconsistency or hints of
+            immoral practices that align with this (or any other) dark pattern
+            then do not sign up!
+          </p>
           <h3
             style={{
               fontFamily: "Poppins",
             }}
           >
-            How to avoid Needless Complexity/Roach Motel
+            Check out this video!
           </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If reading all of that isn't for you, check out this short video I
+            made summarising this technique!
+          </p>
         </Box>
         <YoutubeEmbed embedId="D2lOt-kpXP4" />
         <Divider
