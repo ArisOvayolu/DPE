@@ -10,7 +10,12 @@ import NC2 from "./img/DPT/NCC.png";
 import MD from "./img/DPT/Misdirection.jpg";
 import PZ from "./img/DPT/PrivacyZuckering.jpg";
 import NC from "./img/DPT/NeedlessComplexity.jpg";
+import MisDirection from "./img/DPT/mD.jpg";
 import DA from "./img/DPT/DisguisedAds.jpg";
+import privacy from "./img/DPT/PrivateData.png";
+import D from "./img/DPT/Disguised.png";
+import sneak from "./img/DPT/siB.jpg";
+import confirm from "./img/DPT/ConfirmSH.png";
 import SB from "./img/DPT/SneakintoBasket.jpg";
 import CS from "./img/DPT/ConfirmShaming.jpg";
 import HCE from "./img/DPT/Hidden Costs.jpg";
@@ -448,10 +453,11 @@ const DPT = () => {
               maxWidth: "835px",
             }}
           >
-            Don’t just sign up for anything! <span
+            Don’t just sign up for anything!{" "}
+            <span
               style={{ color: "black", fontSize: 18, fontFamily: "Poppins" }}
             >
-            Be vigilant online.
+              Be vigilant online.
             </span>{" "}
             Be sure to check the service’s stated conditions before
             subscribing/signing up! If you see any inconsistency or hints of
@@ -500,6 +506,187 @@ const DPT = () => {
             Misdirection{" "}
           </h2>
         </Box>
+        <Box
+          sx={{
+            paddingBottom: "15px",
+            flexDirection: "column",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}
+            >
+              Misdirection
+            </span>{" "}
+            Misdirection is the technique of intentionally distracting the
+            user’s attention, through the application of design choices that
+            prey upon psychological biases, to nudge them to selecting an option
+            that benefits the service provider.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            This technique is widely implemented and is often paired with other
+            dark pattern techniques due to its ease of implementation and
+            usability.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            For example, a service provider may implement misdirection with the
+            technique, needless complexity (As seen earlier on the page), so
+            that they can manipulate the user’s action from two directions.
+            Using misdirection to prey on their cognitive biases and needless
+            complexity to frustrate the user.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Misdirection is effective in enabling the service provider to gain
+            better control of their user’s decision making, essentially allowing
+            them to optimise their interface to achieve their goals. As this
+            technique uses psychological biases against the user, the user,
+            often isn’t even aware that their decision-making process is being
+            influenced.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Example
+          </h3>
+          <Card sx={{ padding: "20px", marginBottom: "20px", mt: "30px" }}>
+            <CardMedia
+              component="img"
+              height="400"
+              width="550"
+              image={MisDirection}
+              alt="info"
+            />
+            <CardContent>
+              <Divider
+                light
+                sx={{ padding: "1px", minWidth: "100%" }}
+                variant="fullWidth"
+              />
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                style={{ marginLeft: "155px" }}
+              >
+                Ref: https://adamfard.com/blog/dark-patterns-ux
+              </Typography>
+            </CardContent>
+          </Card>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            The image above displays the implementation of the dark pattern
+            technique, “misdirection” by ZSL London Zoo. The aim of this design
+            technique is to prey upon the users’ cognitive biases and prompt
+            them to click the big green arrow, which would mean that the user
+            would pay a donation as well as the standard fee. The other option
+            is nowhere near as appealing to a user that is trying to quickly
+            purchase their ticket and move to the next stage; they could easily
+            fall prey to this deceptive design without ever realising.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+              marginTop: "30px",
+            }}
+          >
+            How to avoid Misdirection
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Scan the options available to you thoroughly. With the commonality
+            of this dark pattern it will be hard to avoid interfaces that apply
+            it; scanning all options (as the one you want is often secluded) is
+            therefore a key habit to adopt in order to avoid such manipulation.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Do not immediately click on the option that the UI presents you,{" "}
+            <span
+              style={{ color: "black", fontSize: 18, fontFamily: "Poppins" }}
+            >
+              think for yourself!
+            </span>{" "}
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+              marginTop: "30px",
+            }}
+          >
+            Check out this video!
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If reading all of that isn't for you, check out this short video I
+            made summarising this technique!
+          </p>
+        </Box>
         <YoutubeEmbed embedId="6ZfhMkd07GU" />
         <Divider
           light
@@ -521,6 +708,177 @@ const DPT = () => {
             {" "}
             Confirmshaming{" "}
           </h2>
+        </Box>
+        <Box
+          sx={{
+            paddingBottom: "15px",
+            flexDirection: "column",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}
+            >
+              Confirm Shaming
+            </span>{" "}
+            is the technique of using emotive language to influence and,
+            ultimately, sway the user’s decision to benefit the service
+            provider.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            For example, the option to decline a service is worded in a way to
+            make the user feel guilty, or even stupid.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Similarly, to misdirection, technique aims to give the service
+            provider the power of influencing the user’s decision making,
+            allowing them to puppet the users behaviour to best cater to their
+            goals.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Example
+          </h3>
+          <Card sx={{ padding: "20px", marginBottom: "20px", mt: "30px" }}>
+            <CardMedia
+              component="img"
+              height="450"
+              width="600"
+              image={confirm}
+              alt="info"
+            />
+            <CardContent>
+              <Divider
+                light
+                sx={{ padding: "1px", minWidth: "100%" }}
+                variant="fullWidth"
+              />
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                style={{ marginLeft: "60px" }}
+              >
+                Ref: https://adamfard.com/blog/dark-patterns-ux
+              </Typography>
+            </CardContent>
+          </Card>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            The image above is a great example of what confirm shaming
+            implementation might look like. This example not only highlights
+            this technique being used, but it is also paired with privacy
+            zuckering. This website wants the user to reveal their email
+            address, otherwise they simply will not be receiving this random act
+            of supposed “kindness”.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+              marginTop: "30px",
+            }}
+          >
+            How to avoid Confirm Shaming
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Be aware of the application when they use emotional terminology to
+            get you to do something (its most likely Confirmshaming).
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 18, fontFamily: "Poppins" }}
+            >
+              YOU ARE NOT MISSING OUT!
+            </span>{" "}
+            Do not let an application coerce you into thinking that you MUST use
+            their service!
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Ignore and be vigilant, Confirmshaming is often paired with
+            misdirection.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+              marginTop: "30px",
+            }}
+          >
+            Check out this video!
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If reading all of that isn't for you, check out this short video I
+            made summarising this technique!
+          </p>
         </Box>
         <YoutubeEmbed embedId="rPvrPuthUi0" />
         <Divider
@@ -544,6 +902,177 @@ const DPT = () => {
             Privacy Zuckering{" "}
           </h2>
         </Box>
+        <Box
+          sx={{
+            paddingBottom: "15px",
+            flexDirection: "column",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}
+            >
+              Privacy zuckering
+            </span>{" "}
+            is the technique of luring the user to reveal private information
+            that they didn’t want to, or necessarily have to.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Websites/application are able to make additional revenue off the
+            dealing of their users’ private data. Third party corporations,
+            governments, and agencies buy entire databases worth of private data
+            from sources like, Facebook and use it in various ways for various
+            purposes.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            These purposes can range from having complex algorithms designed to
+            comb through these colossal sets of data to identify patterns in
+            user behaviour, to having algorithms that search for keywords that
+            can paint a larger picture of general public sentiment towards a
+            specific policy.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Example
+          </h3>
+          <Card sx={{ padding: "20px", marginBottom: "20px", mt: "30px" }}>
+            <CardMedia
+              component="img"
+              height="450"
+              width="600"
+              image={privacy}
+              alt="info"
+            />
+            <CardContent>
+              <Divider
+                light
+                sx={{ padding: "1px", minWidth: "100%" }}
+                variant="fullWidth"
+              />
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                style={{ marginLeft: "130px" }}
+              >
+                Ref: https://Twitter
+              </Typography>
+            </CardContent>
+          </Card>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            The image above displays a user catching out Facebook on their
+            deceptive usage of users' private data.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+              marginTop: "30px",
+            }}
+          >
+            How to avoid Privacy Zuckering
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            As always, you must be extremely vigilant with your data online!{" "}
+            <span
+              style={{ color: "black", fontSize: 18, fontFamily: "Poppins" }}
+            >
+              Do not enter any personal information that you do not need to.
+            </span>{" "}
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Check privacy settings for everything that you use, including the
+            actual web browser! A virtual profile of you can be made through the
+            storage of your private data which means you have to be careful with
+            everything that tracks your behaviour online.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+          Use any legal aid you can, use GDPR to your advantage! Reject privacy
+          cookies that aren't required, they only minimally benefit your user
+          experience!
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Check out this video!
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If reading all of that isn't for you, check out this short video I
+            made summarising this technique!
+          </p>
+        </Box>
         <YoutubeEmbed embedId="KQHST_gYkzc" />
         <Divider
           light
@@ -566,6 +1095,187 @@ const DPT = () => {
             Disguised Ads{" "}
           </h2>
         </Box>
+        <Box
+          sx={{
+            paddingBottom: "15px",
+            flexDirection: "column",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}
+            >
+              Disguised Ads
+            </span>{" "}
+            ads are the technique of implementing ads into the interface,
+            without making it clear that they are, indeed, ads.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            This technique is implemented in order to try and lure the user into
+            clicking on them.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            A common way for website/applications to generate money online is
+            through advertisements. These advertisements bring in more revenue
+            for increased interaction - whether that be the number of users that
+            view it, or the number of users that click on it.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Example
+          </h3>
+          <Card sx={{ padding: "20px", marginBottom: "20px" }}>
+            <CardMedia
+              component="img"
+              height="450"
+              width="600"
+              image={D}
+              alt="info"
+            />
+            <CardContent>
+              <Divider
+                light
+                sx={{ padding: "1px", minWidth: "100%" }}
+                variant="fullWidth"
+              />
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                style={{ marginLeft: "140px" }}
+              >
+                Ref: https://www.deceptive.design/types/disguised-ads
+              </Typography>
+            </CardContent>
+          </Card>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            The image above is a great representation of how a user may come
+            across this technique and fall victim to it.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            The advertisement matches the design of the UI, preying upon the
+            user’s cognitive biases to click on the massive blue “DOWNLOAD NOW”
+            button. The real download button is on the top left-hand side of the
+            screen, but you wouldn’t blame the user for noticing the other one
+            before.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+              marginTop: "30px",
+            }}
+          >
+            How to avoid Disguised Ads
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Be wary of sites that use advertisements as a form of revenue, they
+            are more likely to implement such techniques to increase profits.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If something doesn’t quite fit into the UI, double check before
+            clicking – chances are it’s a disguised ad.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If you keep falling for it, they’ll keep implementing it. The only
+            way to establish substantial change is if we stop falling victim to
+            these deceptive designs,{" "}
+            <span
+              style={{ color: "black", fontSize: 18, fontFamily: "Poppins" }}
+            >
+              be vigorous online!
+            </span>{" "}
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Check out this video!
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If reading all of that isn't for you, check out this short video I
+            made summarising this technique!
+          </p>
+        </Box>
         <YoutubeEmbed embedId="-wVWqzbcmcE" />
         <Divider
           light
@@ -587,6 +1297,167 @@ const DPT = () => {
             {" "}
             Sneak into Basket{" "}
           </h2>
+        </Box>
+        <Box
+          sx={{
+            paddingBottom: "15px",
+            flexDirection: "column",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+          }}
+        >
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 20, fontFamily: "Poppins" }}
+            >
+              Sneak into Basket
+            </span>{" "}
+            Sneak into basket is the technique of, as you may have guessed by
+            the name, sneaking additional items to the user’s basket without
+            their consent. Most commonly implemented by online shopping sites,
+            this technique aims to make the service provider extra revenue.
+            Similar to hidden costs, the website/application sneaks into small
+            value items to decrease the probability of detection. If a user has
+            a large basket, containing a number of items, the additional item/s
+            that the website sneaked in could go unnoticed and end up being
+            purchased by the user.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Thanks to new laws being passed in the UK (replacing the outdated
+            1997 consumer rights law), this technique is now illegal to
+            implement by online retailers.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Example
+          </h3>
+          <Card sx={{ padding: "20px", marginBottom: "20px" }}>
+            <CardMedia
+              component="img"
+              height="450"
+              width="600"
+              image={sneak}
+              alt="info"
+            />
+            <CardContent>
+              <Divider
+                light
+                sx={{ padding: "1px", minWidth: "100%" }}
+                variant="fullWidth"
+              />
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                style={{ marginLeft: "140px" }}
+              >
+                Ref:
+                https://www.tedic.org/en/dark-pattern-sports-direct-sneak-into-basket-2/
+              </Typography>
+            </CardContent>
+          </Card>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            The image above is an example of sneak into basket implementation.
+            Sports Direct.com have added a £1's worth of additional items to the
+            user’s basket without consent. If the order had been any larger,
+            perhaps, the user wouldn’t have noticed such a small additional
+            charge.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+              mt: "10px",
+            }}
+          >
+            How to avoid Sneak into Basket
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            <span
+              style={{ color: "black", fontSize: 18, fontFamily: "Poppins" }}
+            >
+              Be vigilant
+            </span>{" "}
+            when shopping online, check your cart thoroughly before purchasing.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Do not purchase item/s, even if its useful as it only encourages the
+            implementation of such techniques.
+          </p>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            Avoid going back to sites that implement this technique.
+          </p>
+          <h3
+            style={{
+              fontFamily: "Poppins",
+            }}
+          >
+            Check out this video!
+          </h3>
+          <p
+            style={{
+              paddingBottom: "0px",
+              lineHeight: 1.5,
+              fontFamily: "Helvetica",
+              fontSize: 18,
+              maxWidth: "835px",
+            }}
+          >
+            If reading all of that isn't for you, check out this short video I
+            made summarising this technique!
+          </p>
         </Box>
         <YoutubeEmbed embedId="dVoPKDZuXJ0" />
 
