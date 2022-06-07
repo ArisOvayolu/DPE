@@ -241,6 +241,7 @@ const DPT = () => {
           <h3
             style={{
               fontFamily: "Poppins",
+              marginTop:"40px"
             }}
           >
             Check out this video!
@@ -424,7 +425,7 @@ const DPT = () => {
           <h3
             style={{
               fontFamily: "Poppins",
-              mt: "10px",
+              marginTop: "10px",
             }}
           >
             How to avoid Needless Complexity/Roach Motel
@@ -467,6 +468,7 @@ const DPT = () => {
           <h3
             style={{
               fontFamily: "Poppins",
+              marginTop:"40px"
             }}
           >
             Check out this video!
@@ -530,7 +532,7 @@ const DPT = () => {
             >
               Misdirection
             </span>{" "}
-            Misdirection is the technique of intentionally distracting the
+             is the technique of intentionally distracting the
             user’s attention, through the application of design choices that
             prey upon psychological biases, to nudge them to selecting an option
             that benefits the service provider.
@@ -669,7 +671,7 @@ const DPT = () => {
           <h3
             style={{
               fontFamily: "Poppins",
-              marginTop: "30px",
+              marginTop: "40px",
             }}
           >
             Check out this video!
@@ -862,7 +864,7 @@ const DPT = () => {
           <h3
             style={{
               fontFamily: "Poppins",
-              marginTop: "30px",
+              marginTop: "40px",
             }}
           >
             Check out this video!
@@ -1056,6 +1058,7 @@ const DPT = () => {
           <h3
             style={{
               fontFamily: "Poppins",
+              marginTop:"40px"
             }}
           >
             Check out this video!
@@ -1259,6 +1262,7 @@ const DPT = () => {
           <h3
             style={{
               fontFamily: "Poppins",
+              marginTop:"40px"
             }}
           >
             Check out this video!
@@ -1442,6 +1446,7 @@ const DPT = () => {
           <h3
             style={{
               fontFamily: "Poppins",
+              marginTop:"40px"
             }}
           >
             Check out this video!
